@@ -1,0 +1,828 @@
+[INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-07-21-36-50-028786-rm-NUC10i7FNH-52615
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [static_transform_publisher-1]: process started with pid [52630]
+[INFO] [rviz2-2]: process started with pid [52632]
+[static_transform_publisher-1] [WARN] [1772890610.090594196] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-1] [INFO] [1772890610.100342169] [odom_to_base_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-1] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-1] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-1] from 'odom' to 'base_link'
+[rviz2-2] [INFO] [1772890610.288675281] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1772890610.288790857] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1772890610.300700801] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [ros2-3]: process started with pid [52699]
+[ros2-3] [INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-07-21-36-51-284547-rm-NUC10i7FNH-52699
+[ros2-3] [INFO] [launch]: Default logging verbosity is set to INFO
+[ros2-3] [INFO] [livox_ros_driver2_node-1]: process started with pid [52701]
+[ros2-3] [livox_ros_driver2_node-1] [INFO] [1772890611.685622687] [livox_lidar_publisher]: Livox Ros Driver2 Version: 1.2.4
+[ros2-3] [livox_ros_driver2_node-1] [INFO] [1772890611.685956297] [livox_lidar_publisher]: Data Source is raw lidar.
+[ros2-3] [livox_ros_driver2_node-1] [INFO] [1772890611.685967171] [livox_lidar_publisher]: Config file : /home/rm/sentry_all/sentry_nav_3.0.3/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/../config/MID360_config.json
+[ros2-3] [livox_ros_driver2_node-1] LdsLidar *GetInstance
+[ros2-3] [livox_ros_driver2_node-1] config lidar type: 8
+[ros2-3] [livox_ros_driver2_node-1] successfully parse base config, counts: 1
+[ros2-3] [livox_ros_driver2_node-1] [INFO] [1772890611.686873376] [livox_lidar_publisher]: Init lds lidar success!
+[INFO] [ros2-4]: process started with pid [52730]
+[ros2-4] [INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-07-21-36-52-294817-rm-NUC10i7FNH-52730
+[ros2-4] [INFO] [launch]: Default logging verbosity is set to INFO
+[ros2-4] [INFO] [dm_imu_node-1]: process started with pid [52732]
+[ros2-4] [dm_imu_node-1] [INFO] [1772890612.697019887] [dm_imu_node]: In initialization,Imu Serial Port initialized: /dev/ttyACM1 @ 921600 baud
+[ros2-4] [dm_imu_node-1] [INFO] [1772890613.237672001] [dm_imu_node]: IMU Initialization Complete
+[ros2-4] [dm_imu_node-1] [INFO] [1772890613.237704972] [dm_imu_node]: In get_imu_data_thread,Imu Serial Port initialized: /dev/ttyACM1 @ 921600 baud
+[ros2-3] [livox_ros_driver2_node-1] GetFreeIndex key:livox_lidar_2835458240.
+[ros2-3] [livox_ros_driver2_node-1] Init queue, real query size:16.
+[ros2-3] [livox_ros_driver2_node-1] Lidar[0] storage queue size: 10
+[ros2-3] [livox_ros_driver2_node-1] set pcl data type, handle: 2835458240, data type: 1
+[ros2-3] [livox_ros_driver2_node-1] set scan pattern, handle: 2835458240, scan pattern: 0
+[ros2-3] [livox_ros_driver2_node-1] begin to change work mode to 'Normal', handle: 2835458240
+[ros2-3] [livox_ros_driver2_node-1] successfully set data type, handle: 2835458240, set_bit: 2
+[ros2-3] [livox_ros_driver2_node-1] successfully set pattern mode, handle: 2835458240, set_bit: 0
+[ros2-3] [livox_ros_driver2_node-1] successfully set lidar attitude, ip: 192.168.1.169
+[ros2-3] [livox_ros_driver2_node-1] successfully change work mode, handle: 2835458240
+[ros2-3] [livox_ros_driver2_node-1] successfully enable Livox Lidar imu, ip: 192.168.1.169
+[INFO] [ros2-5]: process started with pid [52744]
+[ros2-5] [INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-07-21-36-54-285287-rm-NUC10i7FNH-52744
+[ros2-5] [INFO] [launch]: Default logging verbosity is set to INFO
+[ros2-5] [INFO] [fastlio_mapping-1]: process started with pid [52746]
+[ros2-3] [livox_ros_driver2_node-1] [INFO] [1772890614.687073900] [livox_lidar_publisher]: livox/imu publish use imu format
+[ros2-3] [livox_ros_driver2_node-1] [INFO] [1772890614.689154341] [livox_lidar_publisher]: livox/lidar publish use livox custom format
+[ros2-5] [fastlio_mapping-1] [INFO] [1772890614.737486041] [laser_mapping]: p_pre->lidar_type 1
+[ros2-5] [fastlio_mapping-1] Multi thread started 
+[ros2-5] [fastlio_mapping-1] ~~~~/home/rm/sentry_all/sentry_nav_3.0.3/src/navigation/FAST_LIO/ file opened
+[ros2-5] [fastlio_mapping-1] [INFO] [1772890614.743165878] [laser_mapping]: Node init finished.
+[ros2-5] [fastlio_mapping-1] [WARN] [1772890614.762653433] [laser_mapping]: No point, skip this scan!
+[ros2-5] [fastlio_mapping-1] 
+[ros2-5] [fastlio_mapping-1] [WARN] [1772890614.772650124] [laser_mapping]: No point, skip this scan!
+[ros2-5] [fastlio_mapping-1] 
+[ros2-5] [fastlio_mapping-1] [WARN] [1772890614.782641946] [laser_mapping]: No point, skip this scan!
+[ros2-5] [fastlio_mapping-1] 
+[ros2-5] [fastlio_mapping-1] IMU Initial Done
+[ros2-5] [fastlio_mapping-1] [WARN] [1772890614.802694115] [laser_mapping]: No point, skip this scan!
+[ros2-5] [fastlio_mapping-1] 
+[ros2-5] [fastlio_mapping-1] [INFO] [1772890614.903731578] [laser_mapping]: Initialize the map kdtree
+[INFO] [ros2-6]: process started with pid [52779]
+[ros2-6] [INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-07-21-36-55-287281-rm-NUC10i7FNH-52779
+[ros2-6] [INFO] [launch]: Default logging verbosity is set to INFO
+[ros2-6] [INFO] [component_container-2]: process started with pid [52818]
+[ros2-6] [INFO] [robot_state_publisher-1]: process started with pid [52816]
+[ros2-6] [robot_state_publisher-1] [WARN] [1772890615.847506955] [kdl_parser]: Converting unknown joint type of joint 'gimbal_joint' into a fixed joint
+[ros2-6] [robot_state_publisher-1] [INFO] [1772890615.847653847] [robot_state_publisher]: got segment camera_link
+[ros2-6] [robot_state_publisher-1] [INFO] [1772890615.847785159] [robot_state_publisher]: got segment camera_optical_frame
+[ros2-6] [robot_state_publisher-1] [INFO] [1772890615.847794211] [robot_state_publisher]: got segment gimbal_link
+[ros2-6] [robot_state_publisher-1] [INFO] [1772890615.847802620] [robot_state_publisher]: got segment map
+[ros2-6] [robot_state_publisher-1] [INFO] [1772890615.847813311] [robot_state_publisher]: Floating joint. Not adding segment from map to gimbal_link.
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.065471987] [camera_detector_container]: Load Library: /home/rm/sentry_all/sentry_nav_3.0.3/install/hik_camera/lib/libhik_camera.so[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.068965660] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<hik_camera::HikCameraNode>[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.068995010] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<hik_camera::HikCameraNode>[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.072461362] [camera_node]: Starting HikCameraNode![0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.075639925] [camera_node]: Found camera count = 1[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.894692456] [camera_node]: Exposure time: 10000.000000[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.895551686] [camera_node]: Gain: 30.000000[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.911002240] [camera_node]: camera calibration URL: package://rm_vision_bringup/config/camera_info.yaml[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.911789207] [camera_node]: Publishing image![0m
+[ros2-6] [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/camera_node' in container '/camera_detector_container'
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.913583954] [camera_detector_container]: Load Library: /home/rm/sentry_all/sentry_nav_3.0.3/install/armor_detector/lib/libarmor_detector.so[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.919379042] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorDetectorNode>[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.919412171] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorDetectorNode>[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.922987198] [armor_detector]: Starting DetectorNode![0m
+[ros2-6] [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/armor_detector' in container '/camera_detector_container'
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.939192689] [camera_detector_container]: Load Library: /home/rm/sentry_all/sentry_nav_3.0.3/install/buff_detector/lib/libbuff_detector.so[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.947377631] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<rm_buff::BuffDetectorNode>[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890616.947427207] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<rm_buff::BuffDetectorNode>[0m
+[INFO] [component_container_isolated-7]: process started with pid [52874]
+[component_container_isolated-7] [INFO] [1772890617.262483463] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[component_container_isolated-7] [INFO] [1772890617.272800267] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-7] [INFO] [1772890617.272834843] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-7] [INFO] [1772890617.272838594] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1772890617.272841701] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1772890617.281777602] [map_server]: 
+[component_container_isolated-7] 	map_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.281829511] [map_server]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.284557772] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[component_container_isolated-7] [INFO] [1772890617.287000302] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1772890617.287034716] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1772890617.291999886] [amcl]: 
+[component_container_isolated-7] 	amcl lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.292634941] [amcl]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.298918764] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-7] [INFO] [1772890617.299574183] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1772890617.299598993] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1772890617.305353356] [lifecycle_manager_localization]: Creating
+[component_container_isolated-7] [INFO] [1772890617.307198902] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.312774079] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.312823482] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.313399752] [map_server]: Configuring
+[component_container_isolated-7] [INFO] [1772890617.313467787] [map_io]: Loading yaml file: /home/rm/sentry_all/sentry_nav_3.0.3/install/sentry_slam/share/sentry_slam/maps/map_20250222.yaml
+[component_container_isolated-7] [INFO] [1772890617.313713370] [map_io]: resolution: 0.05
+[component_container_isolated-7] [INFO] [1772890617.313722504] [map_io]: origin[0]: -3.25
+[component_container_isolated-7] [INFO] [1772890617.313727411] [map_io]: origin[1]: -5.07
+[component_container_isolated-7] [INFO] [1772890617.313732097] [map_io]: origin[2]: 0
+[component_container_isolated-7] [INFO] [1772890617.313736810] [map_io]: free_thresh: 0.25
+[component_container_isolated-7] [INFO] [1772890617.313741495] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-7] [INFO] [1772890617.313746554] [map_io]: mode: trinary
+[component_container_isolated-7] [INFO] [1772890617.313751927] [map_io]: negate: 0
+[component_container_isolated-7] [INFO] [1772890617.313924478] [map_io]: Loading image_file: /home/rm/sentry_all/sentry_nav_3.0.3/install/sentry_slam/share/sentry_slam/maps/map_20250222.pgm
+[component_container_isolated-7] [INFO] [1772890617.319645824] [map_io]: Read map /home/rm/sentry_all/sentry_nav_3.0.3/install/sentry_slam/share/sentry_slam/maps/map_20250222.pgm: 214 X 183 map @ 0.05 m/cell
+[ros2-6] [INFO] [rm_serial_driver_node-3]: process started with pid [52892]
+[component_container_isolated-7] [INFO] [1772890617.323085642] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.323179922] [amcl]: Configuring
+[component_container_isolated-7] [INFO] [1772890617.323260465] [amcl]: initTransforms
+[component_container_isolated-7] [INFO] [1772890617.323579505] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-7] [INFO] [1772890617.325838766] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1772890617.325891757] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1772890617.335372922] [amcl]: initPubSub
+[component_container_isolated-7] [INFO] [1772890617.338850899] [amcl]: Subscribed to map topic.
+[component_container_isolated-7] [INFO] [1772890617.341446776] [controller_server]: 
+[component_container_isolated-7] 	controller_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.343112298] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.343234876] [map_server]: Activating
+[component_container_isolated-7] [INFO] [1772890617.343386846] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1772890617.343446713] [amcl]: Received a 214 X 183 map @ 0.050 m/pix
+[component_container_isolated-7] [INFO] [1772890617.350938902] [controller_server]: Creating controller server
+[component_container_isolated-7] [INFO] [1772890617.362334607] [local_costmap.local_costmap]: 
+[component_container_isolated-7] 	local_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.363234229] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.367378932] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-7] [INFO] [1772890617.368776899] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1772890617.368817391] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[rviz2-2] [INFO] [1772890617.371018133] [rviz2]: Trying to create a map of size 214 x 183 using 1 swatches
+[component_container_isolated-7] [INFO] [1772890617.377101890] [smoother_server]: 
+[component_container_isolated-7] 	smoother_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.379843418] [smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.383022731] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-7] [INFO] [1772890617.383801613] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1772890617.383829285] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1772890617.391000839] [planner_server]: 
+[component_container_isolated-7] 	planner_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.393127586] [planner_server]: Creating
+[rviz2-2] [ERROR] [1772890617.403215719] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-2] active samplers with a different type refer to the same texture image unit
+[component_container_isolated-7] [INFO] [1772890617.404662836] [global_costmap.global_costmap]: 
+[component_container_isolated-7] 	global_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.405424517] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.409029933] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-7] [INFO] [1772890617.412693780] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1772890617.412771561] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1772890617.424078690] [behavior_server]: 
+[component_container_isolated-7] 	behavior_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.428781273] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-7] [INFO] [1772890617.430306326] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1772890617.430353728] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1772890617.444871215] [bt_navigator]: 
+[component_container_isolated-7] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.445017370] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.448360171] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-7] [INFO] [1772890617.449073336] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1772890617.449102367] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1772890617.449382662] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-7] [INFO] [1772890617.449868403] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.450041339] [amcl]: Activating
+[component_container_isolated-7] [INFO] [1772890617.450070002] [amcl]: Creating bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1772890617.461290921] [waypoint_follower]: 
+[component_container_isolated-7] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.462219137] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1772890617.465535533] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-7] [INFO] [1772890617.466150438] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1772890617.466170523] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1772890617.476568362] [velocity_smoother]: 
+[component_container_isolated-7] 	velocity_smoother lifecycle node launched. 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1772890617.479444657] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1772890617.479514824] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1772890617.487826028] [lifecycle_manager_navigation]: Creating
+[component_container_isolated-7] [INFO] [1772890617.489790234] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[ros2-6] [component_container-2] [0m[INFO] [1772890617.492903296] [buff_detector]: Model loaded: /home/rm/sentry_all/sentry_nav_3.0.3/install/buff_detector/share/buff_detector/models/buff_quantized.xml[0m
+[ros2-6] [component_container-2] [0m[INFO] [1772890617.502126349] [buff_detector]: Detector node initialized[0m
+[ros2-6] [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/buff_detector' in container '/camera_detector_container'
+[component_container_isolated-7] [INFO] [1772890617.508213150] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.508252247] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.508358326] [controller_server]: Configuring controller interface
+[component_container_isolated-7] [INFO] [1772890617.508579423] [controller_server]: getting goal checker plugins..
+[component_container_isolated-7] [INFO] [1772890617.508759691] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-7] [INFO] [1772890617.508797178] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1772890617.514581183] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1772890617.520331319] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1772890617.527449844] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1772890617.527844771] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1772890617.529486529] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [ERROR] [1772890617.536582082] [local_costmap.local_costmap]: The configured inflation radius (0.150) is smaller than the computed inscribed radius (0.363) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[component_container_isolated-7] [INFO] [1772890617.540052560] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-7] [INFO] [1772890617.540956857] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-7] [INFO] [1772890617.541240868] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[component_container_isolated-7] [INFO] [1772890617.545239038] [controller_server]: Created controller : FollowPath of type teb_local_planner::TebLocalPlannerROS
+[component_container_isolated-7] [WARN] [1772890617.545392969] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[component_container_isolated-7] [INFO] [1772890617.556709292] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-7] [INFO] [1772890617.556766724] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.556781339] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.566179048] [TEBLocalPlanner]: Footprint model 'circular' (radius: 0.170000m) loaded for trajectory optimization.
+[component_container_isolated-7] [INFO] [1772890617.566231894] [controller_server]: Parallel planning in distinctive topologies enabled.
+[component_container_isolated-7] [INFO] [1772890617.632500294] [controller_server]: library path : /home/rm/sentry_all/sentry_nav_3.0.3/install/costmap_converter/lib/libcostmap_converter.so
+[component_container_isolated-7] [INFO] [1772890617.632644404] [controller_server]: Costmap conversion plugin costmap_converter::CostmapToPolygonsDBSMCCH loaded.
+[component_container_isolated-7] [INFO] [1772890617.638721292] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-7] [INFO] [1772890617.645272879] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.645436885] [smoother_server]: Configuring smoother server
+[component_container_isolated-7] [INFO] [1772890617.651269451] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-7] [INFO] [1772890617.651869541] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-7] [INFO] [1772890617.656842441] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.656928114] [planner_server]: Configuring
+[component_container_isolated-7] [INFO] [1772890617.656959413] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1772890617.661565494] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-7] [INFO] [1772890617.663222920] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-7] [INFO] [1772890617.664093655] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-7] [INFO] [1772890617.664138130] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1772890617.665472660] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1772890617.668928727] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1772890617.668972998] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1772890617.669850347] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1772890617.675979255] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-7] [INFO] [1772890617.676015708] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1772890617.677393173] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-7] [INFO] [1772890617.686910231] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.687078872] [behavior_server]: Configuring
+[component_container_isolated-7] [INFO] [1772890617.691196588] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-7] [INFO] [1772890617.692349449] [behavior_server]: Configuring spin
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890617.697043626] [IoContext::IoContext]: Thread(s) Created: 2[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890617.697246022] [serial_driver]: Start RMSerialDriver![0m
+[component_container_isolated-7] [INFO] [1772890617.705839331] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-7] [INFO] [1772890617.706852748] [behavior_server]: Configuring backup
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890617.714655181] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890617.714750662] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.714796135] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 00 00 00 00 00 00 00 00 00 00 00 00 00 64 00 00 00 26 72 5a 12 00 00 00 00 [0m
+[component_container_isolated-7] [INFO] [1772890617.715444107] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-7] [INFO] [1772890617.716310213] [behavior_server]: Configuring drive_on_heading
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.719923393] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890617.737441711] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 214 X 183 at 0.050000 m/pix
+[component_container_isolated-7] [INFO] [1772890617.739603973] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.740298212] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890617.741021012] [behavior_server]: Configuring assisted_teleop
+[component_container_isolated-7] [INFO] [1772890617.748502197] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-7] [INFO] [1772890617.749834743] [behavior_server]: Configuring wait
+[component_container_isolated-7] [INFO] [1772890617.755997163] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1772890617.756133567] [bt_navigator]: Configuring
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.760757756] [serial_driver]: Invalid header: BD[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.781668648] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890617.796941871] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890617.797002950] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.797064545] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.802161516] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [INFO] [armor_tracker_node-4]: process started with pid [52940]
+[ros2-6] [INFO] [buff_tracker_node-5]: process started with pid [52942]
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.823200855] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [INFO] [rm_fire_control_node-6]: process started with pid [52944]
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.844283563] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.866927618] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [armor_tracker_node-4] [0m[INFO] [1772890617.881338924] [armor_tracker]: Starting TrackerNode![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.887032846] [serial_driver]: Invalid header: 35[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890617.892257722] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890617.892312394] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.892339577] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [buff_tracker_node-5] [0m[INFO] [1772890617.896808472] [buff_tracker]: Tracker node initialized[0m
+[ros2-6] [rm_fire_control_node-6] [33m[WARN] [1772890617.900240660] [fire_control]: FireController is running[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.907777003] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.929609129] [serial_driver]: Invalid header: 4F[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.949986007] [serial_driver]: Invalid header: 64[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.970478487] [serial_driver]: Invalid header: 64[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890617.980921481] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890617.981041365] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.981086980] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890617.991961687] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.012318526] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.033146669] [serial_driver]: Invalid header: BD[0m
+[component_container_isolated-7] [INFO] [1772890618.049595443] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1772890618.049741462] [waypoint_follower]: Configuring
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.053856138] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890618.065567281] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-7] [INFO] [1772890618.066319594] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1772890618.066411460] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-7] [INFO] [1772890618.069587618] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890618.069731861] [controller_server]: Activating
+[component_container_isolated-7] [INFO] [1772890618.069761934] [local_costmap.local_costmap]: Activating
+[component_container_isolated-7] [INFO] [1772890618.069772726] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1772890618.069896091] [local_costmap.local_costmap]: start
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.069305218] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.069370074] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.069399687] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 c7 c7 17 bd 64 00 00 00 a9 ba 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.074501238] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.094837959] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.115993389] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.136886960] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.157248805] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.157304356] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.157327887] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 c7 c7 17 bd 64 00 00 00 a9 ba 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.162419065] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.182737941] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.203246423] [serial_driver]: Invalid header: 17[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.223596399] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.246633716] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.246723841] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.246756298] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.251834989] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890618.270848407] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.273619182] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.294189750] [serial_driver]: Invalid header: 18[0m
+[rviz2-2] [INFO] [1772890618.305086099] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.314589743] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [INFO] [rm_auto_record_node-7]: process started with pid [52976]
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.335076973] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.335167584] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.335195800] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 c7 c7 17 bd 64 00 00 00 a9 ba 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.340362520] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.363079318] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890618.378072819] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-7] [INFO] [1772890618.378163895] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890618.378722780] [smoother_server]: Activating
+[component_container_isolated-7] [INFO] [1772890618.378776341] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.384439857] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.405932454] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.426555856] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.426664570] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.426704498] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.431796055] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.452260644] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.472565525] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.493098142] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890618.510489549] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-7] [INFO] [1772890618.510551180] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890618.510992030] [planner_server]: Activating
+[component_container_isolated-7] [INFO] [1772890618.511042866] [global_costmap.global_costmap]: Activating
+[component_container_isolated-7] [INFO] [1772890618.511054712] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1772890618.511170253] [global_costmap.global_costmap]: start
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.515965854] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.516068837] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.516221123] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.521341428] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [armor_tracker_node-4] [0m[INFO] [1772890618.540758969] [armor_tracker]: Message Filter dropping message: frame 'camera_optical_frame' at time 1772890618.371 for reason 'discarding message because the queue is full'[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.542794786] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.563141266] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.583491254] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.604121862] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.604204661] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.604228076] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.609314266] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.629734838] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.650114730] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.670697994] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.691104769] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.691170908] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.691208320] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.696484479] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_auto_record_node-7] [0m[INFO] [1772890618.714776358] [rm_auto_record]: Record at: /ros_ws/[0m
+[ros2-6] [rm_auto_record_node-7] [0m[INFO] [1772890618.715244194] [rm_auto_record]: Record topics number: 3[0m
+[ros2-6] [rm_auto_record_node-7] [0m[INFO] [1772890618.715287549] [rm_auto_record]: Record topic: /image_raw/compressed, type: sensor_msgs/msg/CompressedImage[0m
+[ros2-6] [rm_auto_record_node-7] [0m[INFO] [1772890618.715341129] [rm_auto_record]: Record topic: /camera_info, type: sensor_msgs/msg/CameraInfo[0m
+[ros2-6] [rm_auto_record_node-7] [0m[INFO] [1772890618.715366284] [rm_auto_record]: Record topic: /detector/armors, type: auto_aim_interfaces/msg/Armors[0m
+[ros2-6] [rm_auto_record_node-7] [0m[INFO] [1772890618.715377627] [rm_auto_record]: Record node initialized.[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.719011887] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.739492516] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.760442365] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.780897922] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.780958791] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.780988842] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.786064951] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.806446611] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.826895324] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.847295892] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.868633803] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.868686175] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.868708023] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.873812930] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.894239963] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.914753030] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.935093360] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890618.955470265] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890618.955530140] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.955550294] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.960690490] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890618.981067797] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.001377643] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.021744795] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.042274489] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.042369917] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.042402982] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.047495691] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.067906517] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.088262738] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.109880924] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.130355744] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.130413938] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.130444409] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.135538845] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.156283533] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.176655032] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.197007814] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.217342930] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.217396119] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.217418788] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.222540324] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.242946790] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.263368077] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.283656269] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.304227969] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.304274432] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.304293544] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.309342781] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.329649006] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.350106023] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.370515746] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.390784683] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.390849150] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.390876849] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.395940074] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.416289223] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.436677948] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.457023938] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.477448946] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.477539506] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.477572265] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.482622854] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.502934295] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890619.513835767] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[rviz2-2] [INFO] [1772890619.515627504] [rviz2]: Trying to create a map of size 214 x 183 using 1 swatches
+[component_container_isolated-7] [INFO] [1772890619.515981188] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.523567331] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.543950375] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.564301087] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.564366727] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.564392558] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.569471189] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.589856258] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.610345078] [serial_driver]: Invalid header: 18[0m
+[component_container_isolated-7] [INFO] [1772890619.620868583] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-7] [INFO] [1772890619.620904490] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1772890619.621167703] [behavior_server]: Activating
+[component_container_isolated-7] [INFO] [1772890619.621190707] [behavior_server]: Activating spin
+[component_container_isolated-7] [INFO] [1772890619.621212432] [behavior_server]: Activating backup
+[component_container_isolated-7] [INFO] [1772890619.621224115] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-7] [INFO] [1772890619.621234366] [behavior_server]: Activating assisted_teleop
+[component_container_isolated-7] [INFO] [1772890619.621244449] [behavior_server]: Activating wait
+[component_container_isolated-7] [INFO] [1772890619.621256796] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.630764838] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.651228695] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.651281505] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.651307857] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.656407587] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.676754944] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.697123337] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.717892061] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890619.727433640] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-7] [INFO] [1772890619.727637084] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1772890619.728122459] [bt_navigator]: Activating
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.738366877] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.738421695] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.738447394] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 4f 2c 18 bd 64 00 00 00 64 35 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.743700813] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.764831831] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.785243709] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.805735897] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890619.812792932] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.826605702] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.826664420] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.826689743] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.831787156] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.852183983] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.872600344] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.892964440] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890619.913420783] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890619.913492190] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.913522748] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.918586876] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890619.919966036] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-7] [INFO] [1772890619.920011678] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1772890619.920277626] [waypoint_follower]: Activating
+[component_container_isolated-7] [INFO] [1772890619.920304730] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.938998347] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.959320443] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890619.979673708] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.000073203] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.000139230] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.000167506] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.005249683] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890620.025937328] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-7] [INFO] [1772890620.026052532] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.025702931] [serial_driver]: Invalid header: 00[0m
+[component_container_isolated-7] [INFO] [1772890620.026621548] [velocity_smoother]: Activating
+[component_container_isolated-7] [INFO] [1772890620.026718227] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.046154528] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.066525847] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.086880911] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.086931109] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.086962390] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.092065148] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.112512161] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.132926943] [serial_driver]: Invalid header: 18[0m
+[component_container_isolated-7] [INFO] [1772890620.133611871] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-7] [INFO] [1772890620.133643478] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1772890620.133666921] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.153269805] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.173669101] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.173737756] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.173761651] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.178859556] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.199428115] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.219765991] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.240113327] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.260622438] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.260703274] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.260741336] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.265859079] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.286227772] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.306577536] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.326961079] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.347379419] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.347442391] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.347472684] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.352565168] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.373168599] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.393528879] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.413946749] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.434358815] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.434412665] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.434438914] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.439502575] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.459925061] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.480329096] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.500732697] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.521181836] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.521232495] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.521254589] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.526350727] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.546782635] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.567220361] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.587678089] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.608149295] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.608252786] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.608285721] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.613374505] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.633694258] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.654109285] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.674521531] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.694944432] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.695033665] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.695087651] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.700180502] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.720500139] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.740993612] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.761872734] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.782395410] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.782447518] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.782479890] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.787563450] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.807892400] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.828334103] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.848716305] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.869112258] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.869163236] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.869184553] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.874279630] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.894751497] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.915317802] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.935687989] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890620.956188340] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890620.956253639] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.956282217] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.961382504] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890620.981746621] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.002154882] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.022505346] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.043204924] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.043454204] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.043535153] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [armor_tracker_node-4] [0m[INFO] [1772890621.044352855] [armor_tracker]: Message Filter dropping message: frame 'camera_optical_frame' at time 1772890620.875 for reason 'discarding message because the queue is full'[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.048668215] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.069167902] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.089498334] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.109848312] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.130380905] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.130440258] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.130470161] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.135560837] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.155914680] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.176278724] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.196659373] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.217106214] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.217170895] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.217202332] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.222241268] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.242563535] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.262910660] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.283296482] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.303712263] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.303762499] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.303783150] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.308881253] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.329350630] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.349741283] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.370159942] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.390549010] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.390600435] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.390622406] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.395717172] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.416148717] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.436996970] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.457368902] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.477729654] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.477817585] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.477850197] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.482925435] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.503344633] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.523676946] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.544072393] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.564544136] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.564650942] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.564736585] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.569822520] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.590161975] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.610740626] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.631263672] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.651609656] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.651657673] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.651682185] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.656866684] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.677443713] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.697926410] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.718286682] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.738873476] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.738925094] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.738953189] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.744080827] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.764526697] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.784933863] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.805337498] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.825712386] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.825768699] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.825796564] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.830892955] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.851374869] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.871790100] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.892208905] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.912549744] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.912776189] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.912872375] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.917979093] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.938434539] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.958785022] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.979157619] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890621.999628224] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890621.999698805] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890621.999722610] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.004809396] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.025281530] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.045596532] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.065999580] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.086411217] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.086460701] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.086485772] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.091569931] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.111966890] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.132296832] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.152640023] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.173006749] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.173059646] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.173081407] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.178207982] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.198701108] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.219264739] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.239647638] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.260069496] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.260139391] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.260184485] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.265311005] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.285727086] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.306188312] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.326573220] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.347048375] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.347163427] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.347203799] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.352289155] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.372929604] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.393312690] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.413781294] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.434181418] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.434229118] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.434249583] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.439326303] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.459714680] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.480300670] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.500688808] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.521057923] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.521105687] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.521151109] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.526230512] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.546695702] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.567049192] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.587452042] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.607891324] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.607939610] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.607959302] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.613091225] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.633505240] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.653921573] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.674269159] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.694631861] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.694743670] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.694788424] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.699907706] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.720398948] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.740721917] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.761103031] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.781593680] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.781851817] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.781907985] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.787012647] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.807360924] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.828632438] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.849053521] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.869513318] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.869561480] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.869581417] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.874657139] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.895588664] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.916325049] [serial_driver]: Invalid header: 90[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.936764056] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.960108256] [serial_driver]: Invalid header: 69[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890622.965244587] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890622.965296298] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.965315642] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890622.980581007] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.001003917] [serial_driver]: Invalid header: D7[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.021285244] [serial_driver]: Invalid header: 64[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.041723085] [serial_driver]: Invalid header: 8F[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.051948256] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.052004282] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.052030407] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.062211358] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.082644131] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.102964056] [serial_driver]: Invalid header: BD[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.123358818] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.138665877] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.138715087] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.138737378] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.143836634] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.164198329] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.184574422] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.204878856] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.225294777] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.225362936] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.225393023] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.230506174] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.250947252] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.271290412] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.291653071] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.312053414] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.312148433] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.312196198] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.317301555] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.337682842] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.358063412] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.378509401] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.398938313] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.398999704] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.399027619] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.404116174] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.424498018] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.444987797] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.465405694] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.485758818] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.485818006] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.485874525] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.490971094] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.511589866] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.531987627] [serial_driver]: Invalid header: 18[0m
+[ros2-6] [armor_tracker_node-4] [0m[INFO] [1772890623.550262118] [armor_tracker]: Message Filter dropping message: frame 'camera_optical_frame' at time 1772890623.380 for reason 'discarding message because the queue is full'[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.552453576] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [0m[INFO] [1772890623.572799642] [serial_driver]: 发布packet消息[0m
+[ros2-6] [rm_serial_driver_node-3] [31m[ERROR] [1772890623.572853910] [serial_driver]: CRC error![0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.572875631] [SerialDriver]: CRC Check Failed! Size: 26, Raw Data: 5a 12 00 00 00 00 00 00 00 00 00 d7 90 18 bd 64 00 00 00 8f 69 5a 12 00 00 00 [0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.578024810] [serial_driver]: Invalid header: 00[0m
+[ros2-6] [rm_serial_driver_node-3] [33m[WARN] [1772890623.598577761] [serial_driver]: Invalid header: 00[0m

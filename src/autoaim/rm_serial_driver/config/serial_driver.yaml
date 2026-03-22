@@ -1,0 +1,9 @@
+/rm_serial_driver:
+  ros__parameters:
+    # device_name: /dev/ttyCH341USB0
+    device_name: /dev/ttyACM1
+    baud_rate: 921600
+    flow_control: none
+    parity: none
+    stop_bits: "1"
+
