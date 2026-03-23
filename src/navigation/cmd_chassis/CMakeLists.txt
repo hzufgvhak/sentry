@@ -33,8 +33,8 @@ set(ros_dependencies
 add_executable(fake_joint src/fake_joint.cpp)
 ament_target_dependencies(fake_joint ${ros_dependencies})
 
-# add_executable(rot_imu src/rot_imu.cpp)
-# ament_target_dependencies(rot_imu ${ros_dependencies})
+add_executable(rot_imu src/rot_imu.cpp)
+ament_target_dependencies(rot_imu ${ros_dependencies})
 
 add_executable(twist_transformer src/twist_transformer.cpp)
 ament_target_dependencies(twist_transformer ${ros_dependencies})
@@ -50,7 +50,7 @@ ament_target_dependencies(twist2chassis_cmd ${ros_dependencies})
 # Install nodes
 install(
   TARGETS fake_joint 
-  # rot_imu 
+  rot_imu 
   twist_transformer 
   twist2chassis_cmd
   DESTINATION lib/${PROJECT_NAME}

@@ -462,8 +462,8 @@ void FireController::Trajectory_Solution()	//忽略空气阻力的弹道解算
 	double Gravity_Compensation = atan(temp_x / (Target_distance/2));	//由下落距离求得重力补偿角
 
 	//正负号记得看情况
-	aim_pitch = (double)(atan((aim_point_z+Z_Shifting)/Target_distance))*180/M_PI + Gravity_Compensation*180/M_PI;
-	aim_yaw = (double)(atan2(aim_point_y, aim_point_x)) * 180/M_PI;
+	aim_pitch = (double)(atan((aim_point_z+Z_Shifting)/Target_distance)) + Gravity_Compensation;
+	aim_yaw = (double)(atan2(aim_point_y, aim_point_x));
 }
 
 
@@ -534,8 +534,8 @@ void FireController::Choose_board(
         //选板部分
 
         //计算甩头期间旋转角度
-        float yaw_motor_delta = fabs(atan2(armor_y, armor_x)-current_yaw*M_PI/180)/Yaw_Res_Speed * msg->v_yaw / 2;
-        float yaw_notor_next_delta = fabs(atan2(armor_y_next, armor_x_next)-current_yaw*M_PI/180)/Yaw_Res_Speed * msg->v_yaw / 2;
+        float yaw_motor_delta = fabs(atan2(armor_y, armor_x)-current_yaw)/Yaw_Res_Speed * msg->v_yaw / 2;
+        float yaw_notor_next_delta = fabs(atan2(armor_y_next, armor_x_next)-current_yaw)/Yaw_Res_Speed * msg->v_yaw / 2;
 
         //切板决策 不切板偏转角度（中心夹角）小于切板夹角时放弃切板
         RCLCPP_INFO(this->get_logger(),"current board angle:%lf   next board angle:%lf",armor_yaw,next_armor_yaw);    
@@ -565,8 +565,8 @@ void FireController::Choose_board(
         float ay = aim_point_y + 0.5f * armor_w * cos(aim_point_yaw);
         float bx = aim_point_x + 0.5f * armor_w * sin(aim_point_yaw);
         float by = aim_point_y - 0.5f * armor_w * cos(aim_point_yaw);
-        float angle_a = atan2(ay, ax)*180/M_PI;  //最大角
-        float angle_b = atan2(by, bx)*180/M_PI;  //最小角
+        float angle_a = atan2(ay, ax);  //最大角
+        float angle_b = atan2(by, bx);  //最小角
 
         Trajectory_Solution();	//弹道解算
         

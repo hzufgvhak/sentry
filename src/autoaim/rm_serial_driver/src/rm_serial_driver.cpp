@@ -207,13 +207,12 @@ void RMSerialDriver::receiveData()
           t.child_frame_id = "gimbal_link";
           current_yaw.data = packet.yaw;
           current_yaw_pub_->publish(current_yaw);
-
-          packet.roll = packet.roll * M_PI / 180.0;
-          packet.pitch = packet.pitch * M_PI / 180.0;
-          packet.yaw = packet.yaw * M_PI / 180.0;
-          // packet.roll = packet.roll ;
-          // packet.pitch = packet.pitch ;
-          // packet.yaw = packet.yaw ;
+          // packet.roll = packet.roll * M_PI / 180.0;
+          // packet.pitch = packet.pitch * M_PI / 180.0;
+          // packet.yaw = packet.yaw * M_PI / 180.0;
+          packet.roll = packet.roll ;
+          packet.pitch = packet.pitch ;
+          packet.yaw = packet.yaw ;
 
           // printf("roll:%f pitch:%f yaw:%f\n", packet.roll, packet.pitch, packet.yaw);
           tf2::Quaternion q;
@@ -739,5 +738,3 @@ void RMSerialDriver::changeTarget()
 // This acts as a sort of entry point, allowing the component to be discoverable
 // when its library is being loaded into a running process.
 RCLCPP_COMPONENTS_REGISTER_NODE(rm_serial_driver::RMSerialDriver)
-
-
