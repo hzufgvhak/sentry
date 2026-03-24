@@ -1,0 +1,886 @@
+[INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-07-12-25-01-349536-rm-NUC10i7FNH-76451
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-2]: process started with pid [76467]
+[INFO] [robot_state_publisher-1]: process started with pid [76465]
+[robot_state_publisher-1] [WARN] [1772857501.540962296] [kdl_parser]: Converting unknown joint type of joint 'gimbal_joint' into a fixed joint
+[robot_state_publisher-1] [INFO] [1772857501.541008453] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1772857501.541041765] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-1] [INFO] [1772857501.541047437] [robot_state_publisher]: got segment gimbal_link
+[robot_state_publisher-1] [INFO] [1772857501.541052504] [robot_state_publisher]: got segment map
+[robot_state_publisher-1] [INFO] [1772857501.541059796] [robot_state_publisher]: Floating joint. Not adding segment from map to gimbal_link.
+[component_container-2] [0m[INFO] [1772857501.770276795] [camera_detector_container]: Load Library: /home/rm/sentry_all/sentry_nav_3.0.3/install/hik_camera/lib/libhik_camera.so[0m
+[component_container-2] [0m[INFO] [1772857501.773800314] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<hik_camera::HikCameraNode>[0m
+[component_container-2] [0m[INFO] [1772857501.773824738] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<hik_camera::HikCameraNode>[0m
+[component_container-2] [0m[INFO] [1772857501.775817594] [camera_node]: Starting HikCameraNode![0m
+[component_container-2] [0m[INFO] [1772857502.226522584] [camera_node]: Found camera count = 1[0m
+[component_container-2] [0m[INFO] [1772857503.014570207] [camera_node]: Exposure time: 10000.000000[0m
+[component_container-2] [0m[INFO] [1772857503.015536343] [camera_node]: Gain: 30.000000[0m
+[INFO] [rm_serial_driver_node-3]: process started with pid [76525]
+[component_container-2] [0m[INFO] [1772857503.031297809] [camera_node]: camera calibration URL: package://rm_vision_bringup/config/camera_info.yaml[0m
+[component_container-2] [0m[INFO] [1772857503.031816121] [camera_node]: Publishing image![0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/camera_node' in container '/camera_detector_container'
+[component_container-2] [0m[INFO] [1772857503.033354072] [camera_detector_container]: Load Library: /home/rm/sentry_all/sentry_nav_3.0.3/install/armor_detector/lib/libarmor_detector.so[0m
+[component_container-2] [0m[INFO] [1772857503.039241338] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorDetectorNode>[0m
+[component_container-2] [0m[INFO] [1772857503.039290815] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorDetectorNode>[0m
+[component_container-2] [0m[INFO] [1772857503.042103180] [armor_detector]: Starting DetectorNode![0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.044490596] [IoContext::IoContext]: Thread(s) Created: 2[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.044657903] [serial_driver]: Start RMSerialDriver![0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.055384294] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.055529892] [serial_driver]: Setting detect_color to 0...[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/armor_detector' in container '/camera_detector_container'
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.057530037] [serial_driver]: Successfully set detect_color to 0![0m
+[component_container-2] [0m[INFO] [1772857503.058448835] [camera_detector_container]: Load Library: /home/rm/sentry_all/sentry_nav_3.0.3/install/buff_detector/lib/libbuff_detector.so[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.060965149] [serial_driver]: 发布packet消息[0m
+[component_container-2] [0m[INFO] [1772857503.064864888] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<rm_buff::BuffDetectorNode>[0m
+[component_container-2] [0m[INFO] [1772857503.064914314] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<rm_buff::BuffDetectorNode>[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.066229731] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.071467839] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.076669283] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.081892411] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.087283067] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.092543305] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.097882177] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.103263238] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.108515328] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.113817170] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.119026791] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.124234007] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.129373417] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.134517078] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.139745890] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.144955583] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.150149256] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.155405458] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.160649183] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.165823856] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.171007819] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.176229912] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.181351254] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.186515895] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.191755893] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.197008280] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.202225837] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.207479083] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.212595994] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.217788498] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.223035120] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.228247015] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.233456637] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.238779820] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.243978480] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.249142653] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.254373568] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.259606516] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.264759428] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.269906796] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.275135644] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.280326760] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.285520962] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.290771793] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.296045134] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.301333901] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.306706558] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.311946439] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.317163257] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.322454391] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.327692940] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.332894447] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.338067765] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.343284576] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.348532994] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.353891012] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.359167494] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.364390712] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.369670249] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.374942628] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.380167874] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.385400529] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.390714531] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.395958843] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.401182843] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.406485082] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.411707124] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.416913865] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.422206367] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.427425980] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.432621579] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.437857541] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.443163201] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.448503214] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.453892946] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.459167717] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.464390724] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.469619534] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.474879370] [serial_driver]: 发布packet消息[0m
+[component_container-2] [0m[INFO] [1772857503.476701791] [buff_detector]: Model loaded: /home/rm/sentry_all/sentry_nav_3.0.3/install/buff_detector/share/buff_detector/models/buff_quantized.xml[0m
+[component_container-2] [0m[INFO] [1772857503.479982987] [buff_detector]: Detector node initialized[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/buff_detector' in container '/camera_detector_container'
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.480096276] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.485302898] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.490514310] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.495743096] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.500989461] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.506326203] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.511553573] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.516761261] [serial_driver]: 发布packet消息[0m
+[INFO] [armor_tracker_node-4]: process started with pid [76576]
+[INFO] [buff_tracker_node-5]: process started with pid [76578]
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.522017265] [serial_driver]: 发布packet消息[0m
+[INFO] [rm_fire_control_node-6]: process started with pid [76580]
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.527273514] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.532539971] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.537837823] [serial_driver]: 发布packet消息[0m
+[armor_tracker_node-4] [37;1m2026-03-07 12:25:03.538 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7419: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.543034763] [serial_driver]: 发布packet消息[0m
+[armor_tracker_node-4] [0m[INFO] [1772857503.547349337] [armor_tracker]: Starting TrackerNode![0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.548232227] [serial_driver]: 发布packet消息[0m
+[buff_tracker_node-5] [37;1m2026-03-07 12:25:03.548 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7419: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
+[rm_fire_control_node-6] [37;1m2026-03-07 12:25:03.548 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7419: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.553457814] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.558733622] [serial_driver]: 发布packet消息[0m
+[buff_tracker_node-5] [0m[INFO] [1772857503.560709430] [buff_tracker]: Tracker node initialized[0m
+[rm_fire_control_node-6] [33m[WARN] [1772857503.562788125] [fire_control]: FireController is running[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.564039576] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.569297914] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.574688839] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.579923033] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.581161952] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.581197951] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.585161576] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.590433708] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.595639435] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.600854973] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.606177298] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.611356323] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.616551717] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.621942102] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.622726145] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.622754409] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.627185281] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.632386874] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.637625701] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.642822378] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.648038770] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.653271928] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.658528977] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.663755693] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.664311731] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.664330801] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.668971440] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.674320883] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.679540939] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.684757116] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.690115565] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.695293501] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.700531245] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.706051401] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.706651359] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.706679386] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.711300734] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.716536819] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.721862950] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.727113771] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.732337796] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.737629592] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.742935782] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.748187488] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.749286138] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.749327796] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.753517509] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.758755681] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.763977865] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.769204408] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.774468490] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.779685797] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.784928779] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.790218568] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.790837834] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.790866918] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.795474290] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.800688939] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.805963925] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.811197267] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.816405271] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.821678398] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.826971578] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.832192350] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.833085482] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.833115940] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.837387483] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.842652153] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.847867935] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.853071713] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.858331341] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.863496976] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.868743302] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.874090100] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.874637521] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.874661262] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.879305515] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.884525750] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.889897226] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.895120634] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.900331872] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.905575034] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.910837093] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.916094705] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.917191343] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.917226068] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.921442057] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.926691093] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.931896026] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.937103504] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.942398781] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.947628123] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.952878723] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.958211701] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.958853437] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.958882838] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.963439989] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.968655865] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.973943289] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.979136064] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.984329466] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.989628944] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857503.994899947] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.000167562] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.001054730] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.001090665] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.005422901] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.010650951] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.015850181] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.021187330] [serial_driver]: 发布packet消息[0m
+[INFO] [rm_auto_record_node-7]: process started with pid [76625]
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.026430227] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.031733423] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.037105433] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.042394304] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.043074867] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.043105341] [serial_driver]: pitch: 0.000000[0m
+[rm_auto_record_node-7] [37;1m2026-03-07 12:25:04.044 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7419: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.047690852] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.053443855] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.058720911] [serial_driver]: 发布packet消息[0m
+[rm_auto_record_node-7] [0m[INFO] [1772857504.059022736] [rm_auto_record]: Record at: /ros_ws/[0m
+[rm_auto_record_node-7] [0m[INFO] [1772857504.059185593] [rm_auto_record]: Record topics number: 3[0m
+[rm_auto_record_node-7] [0m[INFO] [1772857504.059205800] [rm_auto_record]: Record topic: /image_raw/compressed, type: sensor_msgs/msg/CompressedImage[0m
+[rm_auto_record_node-7] [0m[INFO] [1772857504.059246078] [rm_auto_record]: Record topic: /camera_info, type: sensor_msgs/msg/CameraInfo[0m
+[rm_auto_record_node-7] [0m[INFO] [1772857504.059268785] [rm_auto_record]: Record topic: /detector/armors, type: auto_aim_interfaces/msg/Armors[0m
+[rm_auto_record_node-7] [0m[INFO] [1772857504.059279750] [rm_auto_record]: Record node initialized.[0m
+[rm_auto_record_node-7] terminate called after throwing an instance of 'std::runtime_error'
+[rm_auto_record_node-7]   what():  Failed to create database directory (/ros_ws/record_2026_3_7_20_25_4).
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.063991216] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.069313153] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.074679605] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.080042280] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.085400643] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.086643852] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.086684215] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.090837093] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.096711719] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.102204937] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.108025685] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.113349697] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.118675058] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.124146568] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.129454968] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.130172399] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.130215514] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.134773190] [serial_driver]: 发布packet消息[0m
+[ERROR] [rm_auto_record_node-7]: process has died [pid 76625, exit code -6, cmd '/home/rm/sentry_all/sentry_nav_3.0.3/install/rm_auto_record/lib/rm_auto_record/rm_auto_record_node --ros-args --log-level rm_auto_record:=INFO --ros-args --params-file /home/rm/sentry_all/sentry_nav_3.0.3/install/rm_vision_bringup/share/rm_vision_bringup/config/node_params.yaml'].
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.140195220] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.145515716] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.150743023] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.156047615] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.161321377] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.166688750] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.167658922] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.167709144] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.172021498] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.177262931] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.182469978] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.187741511] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.193038932] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.198279120] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.203574574] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.208902190] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.209508901] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.209532572] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.214126432] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.219376619] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.224660399] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.229837289] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.235029418] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.240292347] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.245577469] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.250979387] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.252241224] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.252276421] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.256389585] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.261561251] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.266789859] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.272093343] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.277319735] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.282492214] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.287708936] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.293107906] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.293776285] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.293801599] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.298340772] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.303657013] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.308965571] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.314158995] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.319364116] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.324620112] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.329831990] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.335207326] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.335952604] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.335979554] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.340481038] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.345610031] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.350839508] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.356208476] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.361439922] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.366662146] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.371997800] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.377297255] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.377959624] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.377990856] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.382544503] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.387963937] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.393286005] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.398515007] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.403777439] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.409063042] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.414356546] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.419680012] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.420491123] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.420527220] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.424992276] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.430187785] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.435395095] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.440632098] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.445896291] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.451144552] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.456602003] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.461909840] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.462411174] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.462432490] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.467137311] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.472379230] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.477633262] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.482844035] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.488117705] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.493391538] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.498645461] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.504067575] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.504774990] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.504809271] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.509343366] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.514548817] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.519713425] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.524984877] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.530200542] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.535392755] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.540659277] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.545957449] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.546708354] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.546736778] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.551313071] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.556662961] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.561876618] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.567045987] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.572344576] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.577615647] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.582927014] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.588280505] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.588982445] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.589016282] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.593565688] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.598759732] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.604049078] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.609328826] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.614543696] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.619754547] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.625035690] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.630338518] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.630944883] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.630969685] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.635591008] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.640879838] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.646080082] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.651273143] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.656567429] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.661754739] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.667065994] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.672442587] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.673029329] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.673062263] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.677701064] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.682958686] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.688272300] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.693499864] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.698690405] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.703916153] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.709186848] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.714501621] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.715302406] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.715361221] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.719739074] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.725012057] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.730254986] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.735493834] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.740817360] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.746044141] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.751298789] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.756666722] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.757224462] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.757248977] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.761942553] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.767195913] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.772509825] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.777758354] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.782980614] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.788265378] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.793610548] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.798967199] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.799784683] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.799814982] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.804219923] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.809541272] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.814777598] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.820003955] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.825320260] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.830494118] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.835826495] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.841158793] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.841782834] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.841807510] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.846410022] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.851603719] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.856919569] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.862121919] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.867417409] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.872750079] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.878001608] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.883374766] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.884746038] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.884782378] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.888696708] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.893996425] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.899221038] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.904491023] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.909773115] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.915012355] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.920249557] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.925509360] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.926106576] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.926133948] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.930729470] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.935968682] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.941236897] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.946451223] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.951715349] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.957065470] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.962343289] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.967750403] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.968669125] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.968700003] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.973052300] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.978294590] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.983524299] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.988821579] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.994103484] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857504.999339428] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.004612484] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.009955370] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.010493247] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.010516617] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.015176103] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.020423527] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.025684489] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.030863549] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.036078957] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.041342940] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.046611541] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.051992308] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.052887371] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.052927125] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.057333860] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.062623234] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.067920541] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.073190199] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.078439230] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.083689633] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.089069614] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.094333590] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.094927711] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.094950201] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.099513429] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.104788342] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.110075936] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.115293551] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.120508415] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.125801978] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.131047678] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.136327799] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.137141329] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.137169101] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.141594362] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.146817684] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.152036174] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.157449993] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.162698737] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.167957099] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.173282774] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.178588147] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.179122512] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.179146495] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.183849297] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.189119010] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.194432893] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.199685904] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.204989593] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.210286699] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.215570651] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.221098897] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.221879689] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.221911224] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.226372644] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.231640958] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.236982460] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.242232427] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.247444831] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.252687506] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.258005369] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.263273288] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.263829800] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.263850916] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.268548118] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.273855301] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.279083579] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.284287064] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.289610109] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.294850784] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.300143802] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.305665855] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.306362871] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.306384285] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.310936509] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.316251545] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.321651475] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.326933863] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.332128349] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.337423805] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.342710192] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.347977954] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.348751064] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.348777025] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.353206704] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.358481305] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.363670243] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.368877217] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.374172865] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.379357451] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.384644289] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.390145670] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.390733364] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.390759187] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.395432107] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.400656104] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.405991712] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.411182686] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.416374160] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.421630381] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.426946512] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.432191671] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.433280223] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.433344999] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.437452902] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.442711143] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.447919444] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.453195293] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.458548419] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.463888280] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.469198735] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.474631568] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.475385550] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.475414167] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.479930150] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.485280058] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.490559865] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.495757762] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.500963764] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.506268258] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.511517505] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.516798393] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.518144731] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.518177863] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.522122729] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.527419826] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.532662852] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.538026728] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.543317669] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.548489540] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.553686019] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.559015956] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.559591976] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.559614083] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.564204937] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.569438598] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.574755788] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.579943206] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.585115160] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.590378981] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.595595373] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.600859416] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.601727754] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.601754933] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.606232014] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.611438355] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.616665289] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.621926114] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.627178295] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.632431446] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.637793088] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.643056749] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.643610271] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.643630484] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.648296021] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.653675871] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.658956140] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.664186162] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.669395528] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.674621384] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.679953257] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.685221204] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.685996717] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.686035395] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.690498640] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.695697046] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.700890255] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.706202842] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.711454905] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.716683553] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.722005260] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.727274793] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.727795387] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.727824918] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.732477019] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.737705241] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.742986953] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.748192297] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.753392148] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.758620166] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.763841359] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.769126485] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.769875672] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.769921792] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.774396686] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.779685996] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.784923854] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.790360741] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.795572946] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.800770393] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.806117041] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.811460746] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.812059431] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.812079638] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.816751376] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.822092291] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.827353647] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.832586910] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.837910501] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.843230482] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.848464536] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.853787490] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.854519034] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.854559519] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.859080093] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.864330968] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.869539277] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.874795666] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.880008775] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.885195376] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.890502858] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.895757892] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.896291659] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.896314000] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.901005012] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.906363757] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.911590002] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.916780169] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.922057806] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.927332437] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.932542411] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.937867048] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.938607209] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.938634428] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.943145104] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.948375871] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.953582568] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.958845340] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.964114841] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.969371777] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.974733914] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.982533955] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.986479367] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.986539940] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.987962270] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.993384704] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857505.998738813] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.004629250] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.009975067] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.015416141] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.021031136] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.023934133] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.023996747] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.026550496] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.031999243] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.037364414] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.042621151] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.047885723] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.053262290] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.058548046] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.063825441] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.064404936] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.064432157] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.069056647] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.074339231] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.079550634] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.084744782] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.090051508] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.095271572] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.100498150] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.106052264] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.106708465] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.106734180] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.111323530] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.116589136] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.121924670] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.127158105] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.132389175] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.137745475] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.143072996] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.148345393] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.149446055] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.149508889] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.153660906] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.158964846] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.164182538] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.169389959] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.174620982] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.179878134] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.185119502] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.190374081] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.190964460] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.190987372] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.195591461] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.200790554] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.206131428] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.211342162] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.216588724] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.221890290] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.227142086] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.232444139] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.233448071] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.233491954] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.237844822] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.243128690] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.248367432] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.253604091] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.258877675] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.264126731] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.269371726] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.274755604] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.275281031] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.275304714] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.279983314] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.285252175] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.290610264] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.295851808] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.301129692] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.306487386] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.311770141] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.317028027] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.318502099] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.318549087] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.322440852] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.327652265] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.332847963] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.338065337] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.343383028] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.348635984] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.353915706] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.359200915] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.359766313] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.359789631] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.364441981] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.369691402] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.375010770] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.380225841] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.385451596] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.390786336] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.396020176] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.401340841] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.402309896] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.402340649] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.406803750] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.412130827] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.417413017] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.422741006] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.427990058] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.433212552] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.438484756] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.443760487] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.444357148] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.444379042] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.448998652] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.454356166] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.459645541] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.464852702] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.470161109] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.475482003] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.480784518] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.486080923] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.487108811] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.487148383] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.491679108] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.497134577] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.502533193] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.508180921] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.513613110] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.519020910] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.524668880] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.530164403] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.530881471] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.530907736] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.535517049] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.541000829] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.546382706] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.551676604] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.557096715] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.562390148] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.567860570] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.568966779] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.568998139] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.573365176] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.578807608] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.584228501] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.589934573] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.595389769] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.600797546] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.606452433] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.611948262] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.612680092] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.612714271] [serial_driver]: pitch: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.617374013] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.623023313] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.628417434] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.633845599] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.639590312] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.645041795] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.650593068] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.656318366] [serial_driver]: 发布packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.657113683] [serial_driver]: yaw: 0.000000[0m
+[rm_serial_driver_node-3] [0m[INFO] [1772857506.657139218] [serial_driver]: pitch: 0.000000[0m

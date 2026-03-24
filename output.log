@@ -1,0 +1,1017 @@
+[INFO] [launch]: All log files can be found below /home/rm/.ros/log/2026-03-19-03-26-37-783180-rm-NUC10i7FNH-32833
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [component_container-2]: process started with pid [32852]
+[INFO] [robot_state_publisher-1]: process started with pid [32850]
+[robot_state_publisher-1] [WARN] [1773861997.998524557] [kdl_parser]: Converting unknown joint type of joint 'gimbal_joint' into a fixed joint
+[robot_state_publisher-1] [INFO] [1773861997.998571905] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1773861997.998609439] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-1] [INFO] [1773861997.998616577] [robot_state_publisher]: got segment gimbal_link
+[robot_state_publisher-1] [INFO] [1773861997.998620516] [robot_state_publisher]: got segment map
+[robot_state_publisher-1] [INFO] [1773861997.998626722] [robot_state_publisher]: Floating joint. Not adding segment from map to gimbal_link.
+[component_container-2] [0m[INFO] [1773861998.222131499] [camera_detector_container]: Load Library: /home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/hik_camera/lib/libhik_camera.so[0m
+[component_container-2] [0m[INFO] [1773861998.225924525] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<hik_camera::HikCameraNode>[0m
+[component_container-2] [0m[INFO] [1773861998.225967542] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<hik_camera::HikCameraNode>[0m
+[component_container-2] [0m[INFO] [1773861998.228635866] [camera_node]: Starting HikCameraNode![0m
+[component_container-2] [0m[INFO] [1773861998.583897363] [camera_node]: Found camera count = 1[0m
+[component_container-2] [31m[ERROR] [1773861998.655979869] [camera_detector_container]: Component constructor threw an exception: parameter 'exposure_time' could not be set: Parameter {exposure_time} doesn't comply with integer range.[0m
+[ERROR] [launch_ros.actions.load_composable_nodes]: Failed to load node 'camera_node' of type 'hik_camera::HikCameraNode' in container '/camera_detector_container': Component constructor threw an exception: parameter 'exposure_time' could not be set: Parameter {exposure_time} doesn't comply with integer range.
+[component_container-2] [0m[INFO] [1773861998.657612863] [camera_detector_container]: Load Library: /home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/armor_detector/lib/libarmor_detector.so[0m
+[component_container-2] [0m[INFO] [1773861998.663726965] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorDetectorNode>[0m
+[component_container-2] [0m[INFO] [1773861998.663782277] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<rm_auto_aim::ArmorDetectorNode>[0m
+[component_container-2] [0m[INFO] [1773861998.666735523] [armor_detector]: Starting DetectorNode![0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/armor_detector' in container '/camera_detector_container'
+[component_container-2] [0m[INFO] [1773861998.678838186] [camera_detector_container]: Load Library: /home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/buff_detector/lib/libbuff_detector.so[0m
+[component_container-2] [0m[INFO] [1773861998.687093219] [camera_detector_container]: Found class: rclcpp_components::NodeFactoryTemplate<rm_buff::BuffDetectorNode>[0m
+[component_container-2] [0m[INFO] [1773861998.687150160] [camera_detector_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<rm_buff::BuffDetectorNode>[0m
+[component_container-2] [0m[INFO] [1773861999.076961296] [buff_detector]: Model loaded: /home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/buff_detector/share/buff_detector/models/buff_quantized.xml[0m
+[component_container-2] [0m[INFO] [1773861999.080243235] [buff_detector]: Detector node initialized[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/buff_detector' in container '/camera_detector_container'
+[INFO] [rm_serial_driver_node-3]: process started with pid [32898]
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.506133686] [IoContext::IoContext]: Thread(s) Created: 2[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.506296825] [serial_driver]: Start RMSerialDriver![0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.517733303] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.517849533] [serial_driver]: Setting detect_color to 0...[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.518685304] [serial_driver]: Successfully set detect_color to 0![0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.523184371] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.528367923] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.533381233] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.533481005] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.533605678] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.538819821] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.544034425] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.549330861] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.549356167] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.549494981] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.554622480] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.559884070] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.565161332] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.565356150] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.565432520] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.570423981] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.575555379] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.580855630] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.581404675] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.581465798] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.586301191] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.591506840] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.596817132] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.597372015] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.597452858] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.602085611] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.607328540] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.612544996] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.613385365] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.613467934] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.617789608] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.622975542] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.628262271] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.629376024] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.629475848] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.633533832] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.638803856] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.644160399] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.645361748] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.645439519] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.649524470] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.654737911] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.659911638] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.661385398] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.661439651] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.665152320] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.670702241] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.675947798] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.677363863] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.677486806] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.681312661] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.686912626] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.692129388] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.693356014] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.693415992] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.697350173] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.702772454] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.707935702] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.709320655] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.709411687] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.713115803] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.718464756] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.723755366] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.725367988] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.725450369] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.728997840] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.734252504] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.739467673] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.741367970] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.741409413] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.744695545] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.750032402] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.755263454] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.757357688] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.757418334] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.760473502] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.765760792] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.771039190] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.773354522] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.773404039] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.776239045] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.781579434] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.786987612] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.789354846] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.789405193] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.792194074] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.797435100] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.802786468] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.805397514] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.805469921] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.808036039] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.813262470] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.818533913] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.821354215] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.821411843] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.823710047] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.828883139] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.834132448] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.837374264] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.837425179] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.839357339] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.844562858] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.849826993] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.853351822] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.853419258] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.855072448] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.860235903] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.865471131] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.869391717] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.869453655] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.870719033] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.875911875] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.881173004] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.885379678] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.885469974] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.886629479] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.891842070] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.897246311] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.901359825] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.901429756] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.902480218] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.907648484] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.912799886] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.917324773] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.917408381] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.917994221] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.923191708] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.928486551] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.933400750] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.933518897] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.933851801] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.939114409] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.944357957] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.949407292] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.949478587] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.949616707] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.954801757] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.959989098] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.965280099] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.965469207] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.965556884] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.970691412] [serial_driver]: 收到packet消息[0m
+[INFO] [armor_tracker_node-4]: process started with pid [32923]
+[INFO] [buff_tracker_node-5]: process started with pid [32925]
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.976006686] [serial_driver]: 收到packet消息[0m
+[INFO] [rm_fire_control_node-6]: process started with pid [32927]
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.981328141] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.981417973] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.981485606] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.986693997] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.991965309] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.997258865] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.997372100] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773861999.997439308] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.003189663] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.008773181] [serial_driver]: 收到packet消息[0m
+[armor_tracker_node-4] [0m[INFO] [1773862000.012527779] [armor_tracker]: Starting TrackerNode![0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.014470279] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.014662089] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.014746072] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[buff_tracker_node-5] [0m[INFO] [1773862000.016172868] [buff_tracker]: Tracker node initialized[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.024028722] [serial_driver]: 收到packet消息[0m
+[rm_fire_control_node-6] [33m[WARN] [1773862000.025255806] [fire_control]: FireController is running[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.029298443] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.029377430] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.029430779] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.034673986] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.039943505] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.045114785] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.045383875] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.045452581] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.050367117] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.055702984] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.061042145] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.061396085] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.061493235] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.066343070] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.071570591] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.076871691] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.077406669] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.077473973] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.082216969] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.087520946] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.092742174] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.093411168] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.093652715] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.098061744] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.103318353] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.108659497] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.109392137] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.109466239] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.113961786] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.119228077] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.124433915] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.125390656] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.125471528] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.129664712] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.135073513] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.140305871] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.141355898] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.141443702] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.145701333] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.150989732] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.156236742] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.157395499] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.157447563] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.161453413] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.166759784] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.172018774] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.173396111] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.173437601] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.177227641] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.182588496] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.187922401] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.189404780] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.189469049] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.193360304] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.198807512] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.204078716] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.205399551] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.205445537] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.209334244] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.214679962] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.219978951] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.221394140] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.221504220] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.225362620] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.230915494] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.236202522] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.237393356] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.237458292] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.241404519] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.246667329] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.252168141] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.253356078] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.253405785] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.257356205] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.262587649] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.268019831] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.269423449] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.269506692] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.273543289] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.278851189] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.284155095] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.285412226] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.285455868] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.289335681] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.294540261] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.299864384] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.301405381] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.301457798] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.305144641] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.310455540] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.315784595] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.317389467] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.317457785] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.321039714] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.326254399] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.331535274] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.333401735] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.333462685] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.336761452] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.341983647] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.347440300] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.349409790] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.349527034] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.352960153] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.358298184] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.363568267] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.365396044] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.365482603] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.368873687] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.374079749] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.379285003] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.381440338] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.381527862] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.384544383] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.389790315] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.395120023] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.397402183] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.397471258] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.400433354] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.405792016] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.411058905] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.413474753] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.413703329] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.416333055] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.421603414] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.426841426] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.429435973] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.429557581] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.432199795] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.437514413] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.442904844] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.445378655] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.445456245] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.448226782] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.453532454] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.458741106] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.461402067] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.461465517] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.464186661] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.469651358] [serial_driver]: 收到packet消息[0m
+[INFO] [rm_auto_record_node-7]: process started with pid [32959]
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.474892413] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.477497228] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.477705725] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.480238994] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.485777122] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.491046593] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.493383867] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.493484009] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.496399459] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.501678629] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.506901995] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.509465771] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.509549228] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.512100796] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.517359153] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.522691970] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.525437169] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.525513365] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.527949320] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.533199801] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.538514710] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.541377332] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.541417332] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.543755657] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.549270611] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.554545633] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.557374654] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.557465141] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.559778111] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.565092222] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.570348705] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.573401655] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.573457730] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.575564681] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.580950131] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.586417951] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.589398088] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.589451564] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.591606753] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.596888742] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.602565798] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.605417836] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.605496115] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.607900457] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.613236915] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.618544911] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.621400173] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.621465780] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.623756349] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.628964665] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.634243415] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.637421729] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.637465180] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.639474422] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.644702418] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.650026119] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.653417862] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.653475898] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.655273494] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.660476768] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.665759647] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.669377116] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.669453367] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.671008863] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.676231991] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.681506097] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.685428902] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.685812686] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.686777124] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.692057323] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.697482848] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.701433733] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.701489035] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.702876207] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.708109899] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.713350591] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.717412276] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.717473054] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.719060237] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.724279114] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.729592982] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.733465757] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.733597034] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.735075973] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.740307705] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.745531327] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.749441853] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.749523878] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.750821319] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.756029851] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.761256665] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.765454875] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.765536708] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.766584697] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.771852441] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.777194310] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.781532095] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.781656033] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.782464825] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.787705032] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.792890762] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.797551558] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.797737677] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.798152644] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.803419958] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.808642437] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.813468474] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.813622921] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.814022232] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.819323368] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.824602544] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.829436157] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.829561502] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.829800795] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.835092928] [serial_driver]: 收到packet消息[0m
+[rm_auto_record_node-7] [0m[INFO] [1773862000.837946760] [rm_auto_record]: Record at: /ros_ws/[0m
+[rm_auto_record_node-7] [0m[INFO] [1773862000.838075078] [rm_auto_record]: Record topics number: 3[0m
+[rm_auto_record_node-7] [0m[INFO] [1773862000.838092623] [rm_auto_record]: Record topic: /image_raw/compressed, type: sensor_msgs/msg/CompressedImage[0m
+[rm_auto_record_node-7] [0m[INFO] [1773862000.838125523] [rm_auto_record]: Record topic: /camera_info, type: sensor_msgs/msg/CameraInfo[0m
+[rm_auto_record_node-7] [0m[INFO] [1773862000.838141338] [rm_auto_record]: Record topic: /detector/armors, type: auto_aim_interfaces/msg/Armors[0m
+[rm_auto_record_node-7] [0m[INFO] [1773862000.838147292] [rm_auto_record]: Record node initialized.[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.840317984] [serial_driver]: 收到packet消息[0m
+[rm_auto_record_node-7] terminate called after throwing an instance of 'std::runtime_error'
+[rm_auto_record_node-7]   what():  Failed to create database directory (/ros_ws/record_2026_3_19_11_26_40).
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.845527741] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.845562639] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.845644418] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.850895647] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.856206814] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.861435487] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.861549905] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.861569484] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.866890543] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.872174190] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.877434729] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.877461290] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.877518522] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.882842339] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.888117466] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.893366280] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.893445766] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.893634438] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.898859120] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.904728013] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.909592763] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.909717995] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.910016826] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.915477899] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.920871915] [serial_driver]: 收到packet消息[0m
+[ERROR] [rm_auto_record_node-7]: process has died [pid 32959, exit code -6, cmd '/home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/rm_auto_record/lib/rm_auto_record/rm_auto_record_node --ros-args --log-level rm_auto_record:=INFO --ros-args --params-file /home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/rm_vision_bringup/share/rm_vision_bringup/config/node_params.yaml'].
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.925474660] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.925581456] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.926143242] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.931537859] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.936937295] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.941441166] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.941539379] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.942261710] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.947582811] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.952945642] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.957421016] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.957480674] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.958103135] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.963333074] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.968698764] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.973422130] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.973472700] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.973899467] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.979103542] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.984491738] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.989441578] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.989523921] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.989812148] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862000.995039840] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.000518042] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.005455209] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.005508682] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.005811688] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.010976961] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.016258393] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.021453618] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.021539853] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.021545097] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.026807534] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.032191987] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.037452073] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.037518760] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.037556657] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.042755362] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.048080578] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.053377240] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.053431320] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.053484388] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.058658990] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.063971111] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.069281025] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.069457656] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.069526112] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.074564244] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.079859810] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.085186969] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.085432603] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.085490426] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.090387772] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.095616609] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.100869413] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.101448680] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.101505048] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.106151415] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.111453991] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.116827389] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.117435884] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.117497310] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.122112469] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.127338757] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.132608025] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.133443733] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.133503899] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.137905350] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.143135091] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.148537260] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.149454090] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.149537810] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.154301415] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.159841500] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.165130287] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.165445595] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.165503866] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.170441259] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.175654588] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.180966576] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.181462679] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.181541320] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.186342993] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.191617609] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.197249117] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.197490551] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.197577915] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.202671081] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.207898656] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.213107884] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.213475781] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.213551327] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.218493747] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.223830184] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.229078894] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.229682528] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.229761761] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.234433120] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.239743870] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.245092293] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.245464321] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.245571961] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.250413211] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.255679065] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.260890924] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.261448878] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.261505905] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.266168212] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.271496378] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.276795295] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.277520930] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.277622035] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.282355571] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.287725420] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.292933736] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.293462226] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.293526783] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.298218564] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.303670305] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.308862239] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.309444811] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.309515949] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.314208854] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.319754272] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.325135221] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.325486700] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.325580559] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.330664191] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.335978080] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.341212273] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.341449487] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.341504247] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.346410269] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.351770769] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.357051758] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.357466295] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.357551476] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.362310598] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.367681774] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.372977693] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.373435856] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.373491225] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.378199910] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.383627863] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.388892920] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.389455853] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.389554120] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.394099514] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.399370230] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.404696322] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.405456037] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.405521366] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.410074106] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.415546288] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.421096366] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.421447435] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.421488348] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.426337554] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.431756620] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.437455168] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.437477738] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.437545071] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.442715224] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.448094543] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.453474090] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.453533881] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.453551037] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.458845787] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.464169018] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.469488357] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.469540162] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.469555965] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.474727453] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.479927749] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.485234824] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.485473450] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.485569588] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.490543189] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.495856827] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.501156952] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.501464502] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.501538726] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.506406213] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.511622318] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.516904187] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.517458703] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.517508940] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.522178844] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.527411586] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.532816369] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.533478094] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.533548840] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.538475546] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.543718725] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.549096739] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.549475678] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.549529625] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.554513152] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.559709175] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.564987516] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.565677707] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.565885200] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.570426346] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.575749610] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.581020965] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.581625113] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.581772425] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.586418180] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.591618402] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.596895389] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.597470415] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.597529532] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.602199981] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.607457849] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.612691364] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.613476797] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.613601005] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.618094011] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.623456655] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.628711663] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.629500442] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.629566165] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.634179667] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.639460517] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.644683738] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.645539976] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.645619477] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.649972572] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.655305422] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.660637350] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.661464641] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.661521461] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.665949796] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.671289063] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.676509023] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.677468160] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.677520775] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.681827180] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.687478883] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.692701517] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.693472761] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.693533095] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.698039700] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.703498959] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.708807921] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.709471386] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.709528259] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.714149139] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.719569265] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.724778871] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.725476833] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.725552303] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.730001724] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.735370289] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.740749194] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.741485623] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.741553906] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.746091310] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.751390466] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.756651158] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.757471588] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.757530545] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.761882575] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.767182310] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.772402047] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.773473154] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.773532192] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.777642978] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.782939641] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.788299405] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.789477374] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.789540804] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.793549466] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.798808744] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.804097291] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.805472635] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.805537464] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.809313037] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.814599331] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.819995816] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.821478706] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.821555293] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.825309829] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.830819721] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.836158595] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.837514411] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.837564152] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.841397664] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.846627098] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.851936905] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.853487820] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.853547735] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.857184442] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.862485319] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.867855455] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.869515415] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.869627791] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.873161205] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.878453120] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.883754440] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.885499143] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.885560359] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.889046109] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.894282167] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.900754132] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.903573637] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.903696605] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.906639771] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.912020247] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.917568947] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.917745285] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.917847719] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.922987069] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.929242364] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.933525146] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.933639971] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.935802119] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.941209153] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.947354835] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.949516162] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.949628081] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.952790611] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.958289628] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.963633505] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.965496265] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.965574643] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.968886519] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.974156296] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.979359158] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.981493862] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.981569803] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.984604382] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.989875405] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.995148830] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.997552321] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862001.997736706] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.000650047] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.005890001] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.011109247] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.013556854] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.013732543] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.016433307] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.021719027] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.026996168] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.029505133] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.029643271] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.032317586] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.037633755] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.042961912] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.045500395] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.045571346] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.048244543] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.053537758] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.058735271] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.061494346] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.061553970] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.064099914] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.069437780] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.074670391] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.077529911] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.077646999] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.079961251] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.085680188] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.090960341] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.093612226] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.093876119] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.096197114] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.101540530] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.106722505] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.109535309] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.109623656] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.111943626] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.117304558] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.122648747] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.125497603] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.125587469] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.127958565] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.133266774] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.138528958] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.141492614] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.141551073] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.143759121] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.149106643] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.154364238] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.157518307] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.157591989] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.159590538] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.164984618] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.170361598] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.173494091] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.173552625] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.175590681] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.180896514] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.186198904] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.189493550] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.189544937] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.191398251] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.196751366] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.202158600] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.205514953] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.205599467] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.207491702] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.212822305] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.218294614] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.221496307] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.221556492] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.223569105] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.228813873] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.234424024] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.237479862] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.237534053] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.239656952] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.244982234] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.250381235] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.253490936] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.253583284] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.255676730] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.260901729] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.266452440] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.269506825] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.269578351] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.271713872] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.276951279] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.282310202] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.285521930] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.285606242] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.287615147] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.292942968] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.298243746] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.301482595] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.301565302] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.303541008] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.308808212] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.314108539] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.317517208] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.317588220] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.319687443] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.324976623] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.330479639] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.333534226] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.333656273] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.335999640] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.341301189] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.346555194] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.349509445] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.349576406] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.351936509] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.357137067] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.362345020] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.365517244] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.365586181] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.367631633] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.372954898] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.378303799] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.381514305] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.381612050] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.383622924] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.388879766] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.394098348] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.397536262] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.397700524] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.399434098] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.404707296] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.409938659] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.413569375] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.413714858] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.415271385] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.420786582] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.426156573] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.429474938] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.429569311] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.431487535] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.437074835] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.442296378] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.445526572] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.445632509] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.447553249] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.453077654] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.458613043] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.461529134] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.461606274] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.464062597] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.469656990] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.474893089] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.477526033] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.477591833] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.480097519] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.485406902] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.490621897] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.493533668] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.493627657] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.495842893] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.501333384] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.506643393] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.509552954] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.509639968] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.511844806] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.517076243] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.522335725] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.525531902] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.525599300] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.527507349] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.532744677] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.538015785] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.541550311] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.541654673] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.543295838] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.549058097] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.554648758] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.557537348] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.557586847] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.560122872] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.565820656] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.571401061] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.573520041] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.573568146] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.576777135] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.582353791] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.587989955] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.589552252] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.589612317] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.593543338] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.599128013] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.604684756] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.605523670] [serial_driver]: Timer Send: x:0.00, y:0.00, yaw:0.00,pitch:0.00,pose_state:0[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.605576011] [serial_driver]: [SEND] Packet sent, 24 bytes[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.610093079] [serial_driver]: 收到packet消息[0m
+[rm_serial_driver_node-3] [0m[INFO] [1773862002.615667927] [serial_driver]: 收到packet消息[0m
