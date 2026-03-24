@@ -1,0 +1,44 @@
+<root BTCPP_format="4">
+    <TreeNodesModel>
+        <Condition ID="GameTimeCheck">
+            <input_port name="game_time" type="unsigned short">Target game time to check against</input_port>
+        </Condition>
+        <Condition ID="HPCheck">
+            <input_port name="robot_hp" type="unsigned short"/>
+        </Condition>
+        <Action ID="NavToHome"/>
+        <Action ID="PatrolNav">
+            <input_port name="hp_drop_time_window" type="int"/>
+            <input_port name="hp_drop_threshold" type="int"/>
+            <input_port name="max_rounds" type="int"/>
+        </Action>
+        <Action ID="PoseStatePublisher">
+            <input_port name="pose_state" type="unsigned char"/>
+        </Action>
+        <Action ID="SerialPacketSubscriber">
+            <output_port name="robot_hp" type="unsigned short"/>
+            <output_port name="pitch" type="float"/>
+            <output_port name="is_play" type="bool"/>
+            <output_port name="yaw" type="float"/>
+            <output_port name="task_mode" type="unsigned char"/>
+            <output_port name="roll" type="float"/>
+            <output_port name="detect_color" type="unsigned char"/>
+            <output_port name="game_time" type="unsigned short"/>
+        </Action>
+        <Action ID="TargetSubscriber">
+            <output_port name="target_x" type="float"/>
+            <output_port name="armors_num" type="int"/>
+            <output_port name="target_id" type="std::string"/>
+            <output_port name="target_z" type="float"/>
+            <output_port name="target_y" type="float"/>
+            <output_port name="tracking" type="bool"/>
+        </Action>
+        <Condition ID="TrackingCheck"/>
+        <Action ID="WaitForDuration">
+            <input_port name="duration" type="double"/>
+        </Action>
+        <Action ID="WaypointNav">
+            <input_port name="start_index" type="unsigned short"/>
+        </Action>
+    </TreeNodesModel>
+</root>

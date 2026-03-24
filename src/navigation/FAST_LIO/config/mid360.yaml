@@ -1,0 +1,103 @@
+/**:
+    ros__parameters:
+        feature_extract_enable: false
+        point_filter_num: 3
+        max_iteration: 3
+        filter_size_surf: 0.5
+        filter_size_map: 0.5
+        cube_side_length: 1000.0
+        runtime_pos_log_enable: false
+        # map_file_path: "/home/rm/sentry_nav_V3.0/src/FAST_LIO/PCD/test1.pcd"
+
+        common:
+            lid_topic:  "/livox/lidar"
+            imu_topic:  "imu/data_fastlio"   # "/imu/data"
+            time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
+            time_offset_lidar_to_imu: 0.0 # Time offset between lidar and IMU calibrated by other algorithms, e.g. LI-Init (can be found in README).
+                                        # This param will take effect no matter what time_sync_en is. So if the time offset is not known exactly, please set as 0.0
+
+        preprocess:
+            lidar_type: 1                # 1 for Livox serials LiDAR, 2 for Velodyne LiDAR, 3 for ouster LiDAR, 4 for any other pointcloud input
+            scan_line:  4
+            blind: 0.5
+            timestamp_unit: 3
+            scan_rate: 10
+
+        mapping:
+            acc_cov: 0.1
+            gyr_cov: 0.1
+            b_acc_cov: 0.0001
+            b_gyr_cov: 0.0001
+            fov_degree:    360.0
+            det_range:     100.0
+            extrinsic_est_en:  false     # true: enable the online estimation of IMU-LiDAR extrinsic
+            # extrinsic_T: [ -0.011, -0.02329, 0.04412 ]
+            # extrinsic_R: [ 1., 0., 0.,
+            #                 0., 1., 0.,
+            #                 0., 0., 1.]
+            # extrinsic_T: [-0.026710,  0.004045,  0.065602]
+            # extrinsic_R: [0.999653,  0.001606,  0.026298,
+            #                 -0.001718,  0.999990,  0.004240,
+            #                 -0.026291, -0.004284,  0.999645]
+            # extrinsic_T: [0.128580, -0.005356, 0.038005]
+            # extrinsic_R: [ 0.999860, -0.011263, 0.012382,
+            #             0.011017, 0.999744, 0.019738,
+            #             -0.012601, -0.019598, 0.999729 ]
+
+                # 平移向量 (Translation LiDAR to IMU)
+            # extrinsic_T: [0.093518, -0.169541, 0.113154]
+            # extrinsic_R: [-0.9760,  0.0155, -0.2173,
+            #                 -0.0310, -0.9950,  0.0684,
+            #                 -0.2154,  0.0741,  0.9737
+            #             ]////best1
+
+                # 外部参数配置文件 - 结合物理测量修正版
+                # X: 5.1cm, Y: 10.6cm (水平相距十几厘米)
+                # Z: 修改为 0.06 (你实测的高度差)
+            # extrinsic_T: [0.051325, 0.105903, 0.060000]
+            #     # 旋转矩阵 - 保持不变 (非常稳)
+            # extrinsic_R: [
+            #     -0.9995, -0.0289, -0.0120,
+            #     -0.0288,  0.9995, -0.0121,
+            #     0.0123, -0.0117, -0.9998
+            #     ]
+            # 外部参数配置文件 - 物理实测修正版
+            # X: 标定的 9cm, Y: 你实测的 2cm, Z: 你实测的 6cm
+            # extrinsic_T: [0.09358, 0.020000, 0.0430000] 
+
+            # # 旋转矩阵：使用这组“不飘”的矩阵 (Z轴向上，掉头180°)
+            # extrinsic_R: [
+            #     -0.9760,  0.0155, -0.2173,
+            #     -0.0310, -0.9950,  0.0684,
+            #     -0.2154,  0.0741,  0.9737
+            #     ]
+            extrinsic_T: [-0.146174, -0.022752, -0.015632]
+            # extrinsic_R: [ 0.998871, 0.046713, 0.008665,
+            #   -0.046614, 0.998849, -0.011305,
+            #   -0.009183, 0.010888, 0.999899 ]
+            # extrinsic_R: [  1.0,0.0,0.0,
+            #                 0.0,-1.0,0.0,
+            #                 0.0,0.0,-1.0
+            #             ]   
+            # extrinsic_R: [ 0.998871, -0.046713, -0.008665,
+            #   -0.046614, -0.998849,  0.011305,
+            #   -0.009183, -0.010888, -0.999899 ]# 右乘
+            extrinsic_R: [ 0.998871,  0.046713,  0.008665,
+               0.046614, -0.998849,  0.011305,
+               0.009183, -0.010888, -0.999899 ] #左乘
+
+
+
+                
+        publish:
+            path_en: true                # true: publish Path
+            effect_map_en: false         # true: publish Effects
+            map_en: true                 # true: publish Map cloud
+            scan_publish_en:  true       # false: close all the point cloud output
+            dense_publish_en: true      # false: low down the points number in a global-frame point clouds scan.
+            scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+        pcd_save:
+            pcd_save_en: false
+            interval: -1                 # how many LiDAR frames saved in each pcd file; 
+                                        # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.

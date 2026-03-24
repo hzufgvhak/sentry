@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Simple Attack-Defense Navigation Behavior Tree
+  
+  Logic:
+    1. Monitor serial_packer (game state, HP)
+    2. Monitor target via TargetSubscriber (tracking status)
+    3. Navigate to designated position via WaypointNav
+    4. Decision loop:
+       - If HP is low (below threshold) → defense pose (pose_state=1)
+       - Else if tracking is true → attack pose (pose_state=0)
+       - Else → move pose (pose_state=2)
+    
+  pose_state: 0=attack, 1=defend, 2=move
+  Topic /send is used for pose publishing
+  No return home - stay outside
+-->
+<root BTCPP_format="4">
+  <BehaviorTree ID="AttackDefenseNav">
+    <Sequence>
+      <!-- 1. Update game state from serial_packer -->
+      <SerialPacketSubscriber/>
+      
+      <!-- 2. Update target status (tracking) -->
+      <TargetSubscriber/>
+      
+      <!-- 3. Check game time -->
+      <GameTimeCheck game_time="{game_time}"/>
+      
+      <!-- 4. Navigate to designated position -->
+      <WaypointNav/>
+      
+      <!-- 5. Send move pose after reaching destination -->
+      <PoseStatePublisher pose_state="2"/>  <!-- Move pose -->
+      
+      <!-- 6. Decision loop: continuously check HP and tracking -->
+      <Repeat num_cycles="-1">
+        <Sequence>
+          <!-- Always update serial_packer and target status -->
+          <SerialPacketSubscriber/>
+          <TargetSubscriber/>
+          
+          <!-- Decision: HP check has higher priority than tracking -->
+          <IfThenElse>
+            <HPCheck/>
+            <Sequence>
+              <!-- HP is low: defense pose -->
+              <PoseStatePublisher pose_state="1"/>  <!-- Defense pose -->
+            </Sequence>
+            <Sequence>
+              <!-- HP is normal: check tracking -->
+              <IfThenElse>
+                <TrackingCheck/>
+                <Sequence>
+                  <!-- Tracking detected: attack pose -->
+                  <PoseStatePublisher pose_state="0"/>  <!-- Attack pose -->
+                </Sequence>
+                <Sequence>
+                  <!-- No tracking: move pose -->
+                  <PoseStatePublisher pose_state="2"/>  <!-- Move pose -->
+                </Sequence>
+              </IfThenElse>
+            </Sequence>
+          </IfThenElse>
+          
+          <!-- Small delay between decision cycles -->
+          <WaitForDuration duration="0.1"/>
+        </Sequence>
+      </Repeat>
+    </Sequence>
+  </BehaviorTree>
+
+  <TreeNodesModel>
+    <!-- Serial Packet Subscriber - monitors serial_packer -->
+    <Action ID="SerialPacketSubscriber">
+      <output_port name="game_time" type="unsigned short"/>
+      <output_port name="detect_color" type="unsigned char"/>
+      <output_port name="task_mode" type="unsigned char"/>
+      <output_port name="is_play" type="bool"/>
+      <output_port name="roll" type="float"/>
+      <output_port name="pitch" type="float"/>
+      <output_port name="yaw" type="float"/>
+      <output_port name="robot_hp" type="unsigned short"/>
+      <output_port name="pose_state" type="unsigned char"/>
+    </Action>
+    
+    <!-- Target Subscriber - monitors target tracking status -->
+    <Action ID="TargetSubscriber">
+      <description>Subscribe to /target topic to get tracking status</description>
+      <output_port name="tracking" type="bool">Whether target is being tracked</output_port>
+      <output_port name="target_id" type="std::string">Target ID</output_port>
+      <output_port name="armors_num" type="int">Number of armors detected</output_port>
+      <output_port name="target_x" type="float">Target X position</output_port>
+      <output_port name="target_y" type="float">Target Y position</output_port>
+      <output_port name="target_z" type="float">Target Z position</output_port>
+    </Action>
+    
+    <!-- Game Time Check -->
+    <Condition ID="GameTimeCheck">
+      <input_port name="game_time" type="unsigned short">Target game time</input_port>
+    </Condition>
+    
+    <!-- HP Check - returns SUCCESS if HP is below threshold -->
+    <Condition ID="HPCheck">
+      <input_port name="robot_hp" type="unsigned short">Robot HP threshold</input_port>
+    </Condition>
+    
+    <!-- Tracking Check - returns SUCCESS if tracking is true -->
+    <Condition ID="TrackingCheck">
+      <description>Check if target is being tracked</description>
+    </Condition>
+    
+    <!-- Waypoint Navigation -->
+    <Action ID="WaypointNav">
+      <description>Navigate through waypoints to designated position</description>
+      <input_port name="start_index" type="unsigned short">Starting index</input_port>
+    </Action>
+    
+    <!-- Pose State Publisher - publishes to /send topic -->
+    <Action ID="PoseStatePublisher">
+      <description>Publish pose_state to /send topic</description>
+      <input_port name="pose_state" type="uint8_t">0-attack, 1-defend, 2-move</input_port>
+    </Action>
+    
+    <!-- Wait for Duration - for timing control -->
+    <Action ID="WaitForDuration">
+      <description>Wait for specified duration</description>
+      <input_port name="duration" type="double">Duration in seconds</input_port>
+    </Action>
+  </TreeNodesModel>
+</root>

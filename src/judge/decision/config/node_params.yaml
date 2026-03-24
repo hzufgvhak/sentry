@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    # tree_xml_file: "/home/rm/sentry_all/sentry_nav_3.0.3/src/judge/decision/behavior_tree/judge_nav.xml"
+    tree_xml_file: "/home/rm/sentry_alles/sentry_all/sentry_nav_3.0.3/install/rm_decision/share/rm_decision/behavior_tree/attack_defense_nav.xml"
+    tree_node_model_export_path: "/home/rm/sentry_all/sentry_nav_3.0.3/src/judge/decision/behavior_tree/tree_nodes.xml"
+    tick_period_milliseconds: 100
+    # groot_port: 5556
+    target_game_time: 1
+    send_goal_timeout_ms: 1000
+    # HP threshold for auto defense (when HP drops below this, switch to defense pose)
+    hp_low_threshold: 100
+    # Wait time at home for HP recovery
+    wait_time_at_home: 10
+    # Maximum patrol rounds (0 = infinite)
+    max_patrol_rounds: 0

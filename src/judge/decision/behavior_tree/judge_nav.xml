@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Judge Navigation Behavior Tree
+  
+  Complete Logic:
+    1. WaypointNav: go to designated positions
+    2. Start patrol (PatrolNav handles everything internally):
+       - Always monitor HP and HP drop rate
+       - If threshold reached → return to patrol start
+       - Always monitor tracking
+       - If tracking detected → check count in time window
+         - If count >= threshold → attack mode (pose_state=0)
+         - If count < threshold → continue patrol
+    3. At patrol endpoint → check HP
+       - HP too low → go home
+       - HP normal → continue to patrol start
+    4. At patrol start → check HP
+       - HP too low → go home
+       - HP normal → continue patrol (loop)
+-->
+<root BTCPP_format="4">
+  <BehaviorTree ID="JudgeNav">
+    <Sequence>
+      <!-- 1. Update game state -->
+      <SerialPacketSubscriber/>
+      
+      <!-- 2. Check game time -->
+      <GameTimeCheck game_time="{game_time}"/>
+      
+      <!-- 3. HP check before navigation -->
+      <HPCheck/>
+      
+      <!-- 4. If HP low, go home; otherwise do waypoint navigation -->
+      <IfThenElse>
+        <HPCheck/>
+        <Sequence>
+          <NavToHome/>
+          <PoseStatePublisher pose_state="2"/>
+        </Sequence>
+        <Sequence>
+          <WaypointNav/>
+          <PoseStatePublisher pose_state="2"/>
+        </Sequence>
+      </IfThenElse>
+      
+      <!-- 5. Start patrol - PatrolNav handles all patrol logic internally:
+           - Continuous HP monitoring (returns to start if HP drops)
+           - Continuous tracking monitoring (returns SUCCESS when tracking detected)
+           - Loops between patrol start and end points
+      -->
+      <Sequence>
+        <PoseStatePublisher pose_state="1"/>  <!-- Start patrol: defend mode -->
+        <PatrolNav/>
+        <PoseStatePublisher pose_state="0"/>  <!-- Attack mode after patrol ends -->
+      </Sequence>
+      
+      <!-- 6. After patrol ends: check HP and decide next action -->
+      <Sequence>
+        <HPCheck/>
+        <IfThenElse>
+          <HPCheck/>
+          <Sequence>
+            <NavToHome/>
+            <PoseStatePublisher pose_state="2"/>
+          </Sequence>
+          <Sequence>
+            <!-- Continue patrol loop -->
+            <PoseStatePublisher pose_state="1"/>
+            <PatrolNav/>
+            <PoseStatePublisher pose_state="0"/>
+          </Sequence>
+        </IfThenElse>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+  <TreeNodesModel>
+    <Action ID="SerialPacketSubscriber">
+      <output_port name="game_time" type="unsigned short"/>
+      <output_port name="detect_color" type="unsigned char"/>
+      <output_port name="task_mode" type="unsigned char"/>
+      <output_port name="is_play" type="bool"/>
+      <output_port name="roll" type="float"/>
+      <output_port name="pitch" type="float"/>
+      <output_port name="yaw" type="float"/>
+      <output_port name="robot_hp" type="unsigned short"/>
+      <output_port name="pose_state" type="unsigned char"/>
+    </Action>
+    <Condition ID="GameTimeCheck">
+      <input_port name="game_time" type="unsigned short">Target game time</input_port>
+    </Condition>
+    <Condition ID="HPCheck">
+      <input_port name="robot_hp" type="unsigned short">Robot HP</input_port>
+    </Condition>
+    <Action ID="WaypointNav">
+      <description>Navigate through waypoints</description>
+      <input_port name="start_index" type="unsigned short">Starting index</input_port>
+    </Action>
+    <Action ID="NavToHome">
+      <description>Navigate to home and wait</description>
+    </Action>
+    <Action ID="PatrolNav">
+      <description>
+        Patrol: monitors HP and tracking continuously
+        Returns SUCCESS when tracking detected or max rounds
+        Returns FAILURE when HP drops significantly
+      </description>
+      <input_port name="max_rounds" type="int">Max rounds (0=infinite)</input_port>
+    </Action>
+    <Action ID="PoseStatePublisher">
+      <description>Publish pose_state</description>
+      <input_port name="pose_state" type="uint8_t">0-attack, 1-defend, 2-move</input_port>
+    </Action>
+  </TreeNodesModel>
+</root>
