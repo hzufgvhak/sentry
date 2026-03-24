@@ -454,7 +454,7 @@ FireController::FireController(const rclcpp::NodeOptions & options)
 void FireController::Trajectory_Solution()	//忽略空气阻力的弹道解算
 {
 	//计算弹丸飞行时间
-	float Target_distance = sqrt((aim_point_x) * (aim_point_x) + (aim_point_y) * (aim_point_y) );	//飞行距离
+	float Target_distance = sqrt((aim_point_x) * (aim_point_x) + (aim_point_y) * (aim_point_y) + (aim_point_z) * (aim_point_z));	//飞行距离
 	Fly_time = Target_distance / Shoot_Speed;
 	
 	//重力补偿
@@ -521,8 +521,8 @@ void FireController::Choose_board(
         float armor_z_next = aim_z;			//默认忽略z偏差
         /*是否修正z和r上偏差*/
         if (msg->armors_num == 4) {
-          if(!Ignore_R_Diff){	r = !use_1 ? msg->radius_1 : msg->radius_2;}				//启用r偏差
-          if(!Ignore_Z_Diff){	armor_z = !use_1 ? aim_z : (aim_z + msg->dz);}		//启用z偏移
+          if(!Ignore_R_Diff){	next_r = !use_1 ? msg->radius_1 : msg->radius_2;}				//启用r偏差
+          if(!Ignore_Z_Diff){	armor_z_next = !use_1 ? aim_z : (aim_z + msg->dz);}		//启用z偏移
         }
         // 根据转向判断下一个装甲板的位置角
         float next_armor_yaw =
