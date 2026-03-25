@@ -495,19 +495,22 @@ void RMSerialDriver::timer_callback()
       
       send_packet.pitch = last_fired_msg_.aim_pitch;
       send_packet.yaw = last_fired_msg_.aim_yaw;
+      
 
       // 装填火控数据 (Send)
       send_packet.pose_state = last_state_msg_.pose_state;
+      send_packet.tuoluo = last_fired_msg_.tuoluo;
 
       // 装填坐标速度数据 (Twist)
       send_packet.nav_x = last_vel_msg_.linear.x;
       send_packet.nav_y = last_vel_msg_.linear.y;
       send_packet.nav_z = last_vel_msg_.angular.z;
+      
     }
 
     // 打印调试信息
-    RCLCPP_INFO(this->get_logger(), "Timer Send: x:%.2f, y:%.2f, yaw:%.2f,pitch:%.2f,pose_state:%d", 
-             send_packet.nav_x, send_packet.nav_y, send_packet.yaw,send_packet.pitch,send_packet.pose_state);
+    RCLCPP_INFO(this->get_logger(), "Timer Send: x:%.2f, y:%.2f, yaw:%.2f,pitch:%.2f,pose_state:%d, tuoluo:%d",
+             send_packet.nav_x, send_packet.nav_y, send_packet.yaw,send_packet.pitch,send_packet.pose_state, send_packet.tuoluo);
 
     // 调用底层的发送函数
     sendPacket(&send_packet);

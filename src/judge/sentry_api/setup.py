@@ -19,7 +19,8 @@ setup(
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+        'console_scripts': 
+        [
             'nav_to_pose=sentry_api.nav_to_pose:main',
             'judge=sentry_api.judge:main',
             'publish=sentry_api.publish:main',
@@ -29,7 +30,8 @@ setup(
             'through=sentry_api.through:main',
             'pose_state_node=sentry_api.pose_state_node:main',
             'pose_state_timer=sentry_api.pose_state_timer:main',
-
+            'judge_tuoluo_patrol_gothroughpose.py=sentry_api.judge_tuoluo_patrol_gothroughpose:main',
+            'judge_tuoluo_patrol.py=sentry_api.judge_tuoluo_patrol:main',
         ],
     },
 )

@@ -25,7 +25,7 @@ def generate_launch_description():
             parameters=[{
                 'target_frame': 'base_link', # 投影到的参考系，通常选底盘
                 'transform_tolerance': 0.01,
-                'min_height': -1.0,            # 切片的最小高度（相对于 target_frame）
+                'min_height': 0.0,            # 切片的最小高度（相对于 target_frame）
                 'max_height': 0.6,            # 切片的最大高度（在这个范围内的点会被打平）
                 'angle_min': -3.1415,         # -180度
                 'angle_max': 3.1415,          # 180度

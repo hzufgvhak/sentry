@@ -52,8 +52,21 @@ def generate_launch_description():
         output='screen'
     )
 
+    # launch_scan = launch.actions.ExecuteProcess(
+    #     cmd=['ros2', 'launch', 'sentry_startup', 'pointcloud_to_laserscan.launch.py'],
+    #     output='screen'
+    # )
+
     launch_dm_imu = launch.actions.ExecuteProcess(
         cmd=['ros2', 'launch', 'dm_imu', 'run_without_rviz.launch.py'],
+        output='screen'
+    )
+
+    # rot_imu：cmd_chassis 包中独立节点，用于 IMU 旋转/补偿
+    rot_imu_node = launch_ros.actions.Node(
+        package='cmd_chassis',
+        executable='rot_imu',
+        name='rot_imu',
         output='screen'
     )
 
@@ -72,11 +85,11 @@ def generate_launch_description():
         output='screen'
     )
 
+
     launch_judge = launch_ros.actions.Node(
         package='sentry_api',
         executable='judge',
         name='judge',
-        
         output='log',
         # 如果需要参数可以在这里添加
         #parameters=[{'use_sim_time': use_sim_time}]
@@ -85,10 +98,13 @@ def generate_launch_description():
     action_group = launch.actions.GroupAction([
         launch.actions.TimerAction(period=1.0, actions=[launch_livox]),
         launch.actions.TimerAction(period=2.0, actions=[launch_dm_imu]),
+        # rot_imu 需要在 dm_imu 启动后立即启动，保证 imu 预处理可用
+        launch.actions.TimerAction(period=3.0, actions=[rot_imu_node]),
         launch.actions.TimerAction(period=4.0, actions=[launch_fast_lio2]),
         launch.actions.TimerAction(period=5.0, actions=[launch_octomap_server2]),
-        launch.actions.TimerAction(period=5.0, actions=[launch_autoaim]),
-        launch.actions.TimerAction(period=6.0, actions=[navigation_launch]),
+        #launch.actions.TimerAction(period=6.0, actions=[launch_scan]),
+        launch.actions.TimerAction(period=7.0, actions=[launch_autoaim]),
+        launch.actions.TimerAction(period=8.0, actions=[navigation_launch]),
         #launch.actions.TimerAction(period=7.0, actions=[slam_launch]),
         #launch.actions.TimerAction(period=18.0, actions=[launch_judge]),
     ])

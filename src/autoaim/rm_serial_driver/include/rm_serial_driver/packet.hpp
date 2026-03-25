@@ -39,7 +39,8 @@ struct SendPacket
   uint8_t state : 2;       // 0-untracking 1-tracking-aim 2-tracking-buff
   uint8_t fire_flag : 1;  // 0-fired-off 1-fired-on
   uint8_t pose_state : 2;   // 0-attack 1-defense 2-move
-  uint8_t reserved : 3;
+  bool tuoluo : 1;
+  uint8_t reserved : 2;
   float pitch;
   float yaw;
   float nav_x;

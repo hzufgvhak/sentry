@@ -92,7 +92,7 @@ class RobotDecisionNode(Node):
         # ===================== 通信 =====================
         self.serial_sub = self.create_subscription(
             SerialPacket, '/serial_packet', self.serial_callback, 10)
-        self.pose_state_pub = self.create_publisher(FiredInfo, '/fired_info', 10)
+        self.pose_state_pub = self.create_publisher(Send, '/send', 10)
 
         # ===================== TF2 =====================
         self.tf_buffer = tf2_ros.Buffer()
@@ -106,7 +106,7 @@ class RobotDecisionNode(Node):
 
         # ===================== 状态与变量 =====================
         self.state = RobotState.IDLE
-        self.current_hp = 450
+        self.current_hp = 600
         self.game_time = 0
 
         self.nav_busy = False
