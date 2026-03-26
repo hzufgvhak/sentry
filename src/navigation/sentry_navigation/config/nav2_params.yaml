@@ -207,7 +207,7 @@ controller_server:
     #   # 当 use_velocity_scaled_lookahead_dist 为 true 时，预测速度的时间。也被称为超前增益
       lookahead_time: 1.0 #1.5
     #   # 如果 use_rotate_to_heading 是 true ，这是使用的角速度
-      rotate_to_heading_angular_vel: 0.8 #1.1
+      rotate_to_heading_angular_vel: 0.5 #1.1
     #   # TF变换公差
       transform_tolerance: 0.2 #0.1
     #   # 是否使用速度缩放的超前距离或常数 lookahead_distance
