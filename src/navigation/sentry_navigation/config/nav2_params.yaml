@@ -38,14 +38,14 @@ amcl:
     # 在地图上进行障碍物充气的最大距离，用于likelihood_field模型。
     laser_likelihood_max_dist: 2.0
     # 要考虑的最大扫描范围，设为-1.0会直接使用激光报告的最大范围
-    laser_max_range: 100.0
+    laser_max_range: 3.0
     laser_min_range: -1.0
     # 使用哪个模型，beam、likelihood_field 或 likelihood_field_prob。likelihood_field_prob 包含beamskip功能
     laser_model_type: "likelihood_field"
     # 更新过滤器时，设置每次扫描要使用多少个均匀间隔的光束
     max_beams: 60 
     # 所允许的最大粒子数
-    max_particles: 2000
+    max_particles: 1000
     # 所允许的最小粒子数
     min_particles: 500
     odom_frame_id: "odom"
@@ -74,10 +74,10 @@ amcl:
     # 在执行过滤器更新之前需要的最小平移距离
     update_min_d: 0.05  #0.25
     # 模型中z_hit部分的混合权重，所有使用的z权重之和必须为1。光束（Beam）模型使用所有共4个z_*权重，而似然模型（Likelihood）使用z_hit和z_rand权重
-    z_hit: 0.9  #0.5
+    z_hit: 0.7  #0.5
     z_max: 0.05
-    z_rand: 0.1 #0.5
-    z_short: 0.05
+    z_rand: 0.05 #0.5
+    z_short: 0.2
     # 要订阅的激光雷达话题名称
     scan_topic: scan1
 

@@ -6,7 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    # è·å–ä¸æ‹¼æ¥é»˜è®¤è·¯å¾„
+    # »ñÈ¡²¢Æ´½ÓÄ¬ÈÏÂ·¾¶
     sentry_navigation_dir = get_package_share_directory(
         'sentry_navigation')
     slam_pkg_share = get_package_share_directory('sentry_slam')
@@ -69,7 +69,7 @@ def generate_launch_description():
         launch_ros.actions.Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            name='world_to_base_link',
+            name='map_to_odom',
             arguments=[
                 '--x', '0.0',
                 '--y', '0.0',
@@ -78,9 +78,10 @@ def generate_launch_description():
                 '--qy', '0.0',
                 '--qz', '0.0',
                 '--qw', '1.0',
-                '--frame-id', 'odom',
-                '--child-frame-id', 'base_link'
+                '--frame-id', 'map',
+                '--child-frame-id', 'odom'
             ],
             output='screen'
         ),
     ])
+

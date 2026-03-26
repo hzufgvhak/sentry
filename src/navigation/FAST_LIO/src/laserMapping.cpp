@@ -629,9 +629,9 @@ void set_posestamp(T & out)
 
 void publish_odometry(const rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr pubOdomAftMapped, std::unique_ptr<tf2_ros::TransformBroadcaster> & tf_br)
 {
-    // ä¿®æ”¹ä¸ºå‘å¸ƒ odom -> base_link (æ ‡å‡†Fast-LIOè¡Œä¸º)
-    odomAftMapped.header.frame_id = "map";
-    odomAftMapped.child_frame_id = "odom";
+    // º¯ÊıËµÃ÷£º·¢²¼ FAST-LIO µÄÀï³Ì¼ÆÏûÏ¢ºÍ tf£¬Í³Ò»Ê¹ÓÃ odom -> base_link¡£
+    odomAftMapped.header.frame_id = "odom";
+    odomAftMapped.child_frame_id = "base_link";
     odomAftMapped.header.stamp = get_ros_time(lidar_end_time);
     set_posestamp(odomAftMapped.pose);
     pubOdomAftMapped->publish(odomAftMapped);
@@ -648,10 +648,10 @@ void publish_odometry(const rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPt
     }
 
     geometry_msgs::msg::TransformStamped trans;
-    // ä¿®æ”¹ä¸ºå‘å¸ƒ odom -> base_link (æ ‡å‡†Fast-LIOè¡Œä¸º)
-    trans.header.frame_id = "map";
+    // ·¢²¼±ê×¼µ×ÅÌ tf£ºodom -> base_link¡£
+    trans.header.frame_id = "odom";
     trans.header.stamp = odomAftMapped.header.stamp;
-    trans.child_frame_id = "odom";
+    trans.child_frame_id = "base_link";
     trans.transform.translation.x = odomAftMapped.pose.pose.position.x;
     trans.transform.translation.y = odomAftMapped.pose.pose.position.y;
     trans.transform.translation.z = odomAftMapped.pose.pose.position.z;
@@ -936,7 +936,7 @@ public:
         pubLaserCloudFull_body_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_registered_body", 20);
         pubLaserCloudEffect_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_effected", 20);
         pubLaserCloudMap_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/Laser_map", 20);
-        pubOdomAftMapped_ = this->create_publisher<nav_msgs::msg::Odometry>("/Odometry", 20);       // !?publish odometryå‘å¸ƒçš„é‡Œç¨‹è®¡è¯é¢˜å
+        pubOdomAftMapped_ = this->create_publisher<nav_msgs::msg::Odometry>("/Odometry", 20);       // ·¢²¼Àï³Ì¼Æ»°Ìâ
         pubPath_ = this->create_publisher<nav_msgs::msg::Path>("/path", 20);
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
 
@@ -1210,3 +1210,4 @@ int main(int argc, char** argv)
 
     return 0;
 }
+
