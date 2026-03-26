@@ -464,7 +464,7 @@ void FireController::Trajectory_Solution()	//忽略空气阻力的弹道解算
 	//正负号记得看情况
 	// aim_pitch = (double)(atan((aim_point_z+Z_Shifting)/Target_distance))*180/M_PI + Gravity_Compensation*180/M_PI;
 	// aim_yaw = (double)(atan2(aim_point_y, aim_point_x)) * 180/M_PI;
-  aim_pitch = (double)(atan((aim_point_z+Z_Shifting)/Target_distance)) + Gravity_Compensation;
+  aim_pitch = -((double)(atan((aim_point_z+Z_Shifting)/Target_distance)) + Gravity_Compensation);
 	aim_yaw = (double)(atan2(aim_point_y, aim_point_x));
 }
 
