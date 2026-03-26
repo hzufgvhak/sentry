@@ -14,6 +14,7 @@ struct ReceivePacket
   uint8_t is_play : 1;      // 1-play 0-stop
   bool change_target : 1;   // 1-change target
   uint8_t reserved : 2;
+   uint8 pose_state;
   float roll;
   float pitch;
   float yaw;
@@ -30,7 +31,8 @@ struct SendPacket
   uint8_t fire_flag : 4;  // 0-fired-off 1-fired-on
   float pitch;
   float yaw;
-
+  bool tuoluo;
+  uint8 pose_state;
   float nav_x;
   float nav_y;
   float nav_z;
@@ -38,9 +40,9 @@ struct SendPacket
   
   uint16_t checksum = 0;
 } __attribute__((packed));
-```
+
 
 
 
 1.修改了amcl,scan是平面数据类型，修改了一下局部地图，要启动局部地图，需要切片文件启动。
-2.
+2.改了火控的pitch方向，改了改变雷达roll，180度矩阵更新，

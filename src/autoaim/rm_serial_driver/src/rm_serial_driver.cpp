@@ -499,7 +499,7 @@ void RMSerialDriver::timer_callback()
 
       // 装填火控数据 (Send)
       send_packet.pose_state = last_state_msg_.pose_state;
-      send_packet.tuoluo = last_fired_msg_.tuoluo;
+      send_packet.tuoluo = last_state_msg_.tuoluo;
 
       // 装填坐标速度数据 (Twist)
       send_packet.nav_x = last_vel_msg_.linear.x;
