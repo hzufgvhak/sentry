@@ -43,7 +43,7 @@ class SerialPacketSubscriber(Node):
             throttle_duration_sec=0.1  # 控制日志输出频率
         )
 
-        if msg.game_time == 0:
+        if msg.game_time == 1:
            self.set_goal_pose(0.4, -4.0)
            self.set_goal_pose(0.5, -4.1)
         #    self.set_goal_pose(4.5, 0.1)
