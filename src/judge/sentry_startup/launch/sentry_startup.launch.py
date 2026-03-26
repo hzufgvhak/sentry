@@ -55,7 +55,8 @@ def generate_launch_description():
     # launch_scan = launch.actions.ExecuteProcess(
     #     cmd=['ros2', 'launch', 'sentry_startup', 'pointcloud_to_laserscan.launch.py'],
     #     output='screen'
-    # )
+    #)
+    
 
     launch_dm_imu = launch.actions.ExecuteProcess(
         cmd=['ros2', 'launch', 'dm_imu', 'run_without_rviz.launch.py'],

@@ -231,7 +231,7 @@ controller_server:
     #   # 如果 use_rotate_to_heading 是 true ，路径方向和启动机器人方向 (弧度) 的差异会触发旋转
       rotate_to_heading_min_angle: 1.0
     #   # 如果 use_rotate_to_heading 为 true ，则旋转至航向时的最大允许角加速度 (rad/s)
-      max_angular_accel: 9.0
+      max_angular_accel: 0.8
     ####################################################################################
       # DWB默认控制器 parameters
       # plugin: "dwb_core::DWBLocalPlanner"
