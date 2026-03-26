@@ -2,23 +2,22 @@
 #define __FIRE_CONTROL_HPP__
 
 #include <iostream>
-#include <rclcpp/rclcpp.hpp>
-#include <rclcpp/publisher.hpp>
-#include <rclcpp/subscription.hpp>
+#include <memory>
+
 #include <message_filters/subscriber.h>
 #include <message_filters/sync_policies/approximate_time.h>
-
-
-#include "auto_aim_interfaces/msg/target.hpp"
-#include "auto_aim_interfaces/msg/time_info.hpp"
-#include "auto_aim_interfaces/msg/fired_info.hpp"
-#include "buff_interfaces/msg/rune.hpp"
-#include "buff_interfaces/msg/time_info.hpp"
-#include <visualization_msgs/msg/marker.hpp>
+#include <rclcpp/publisher.hpp>
+#include <rclcpp/rclcpp.hpp>
+#include <rclcpp/subscription.hpp>
 #include <std_msgs/msg/float32.hpp>
 #include <std_msgs/msg/float64.hpp>
+#include <visualization_msgs/msg/marker.hpp>
 
-
+#include "auto_aim_interfaces/msg/fired_info.hpp"
+#include "auto_aim_interfaces/msg/target.hpp"
+#include "auto_aim_interfaces/msg/time_info.hpp"
+#include "buff_interfaces/msg/rune.hpp"
+#include "buff_interfaces/msg/time_info.hpp"
 
 namespace rm_fire_control
 {
@@ -26,61 +25,62 @@ namespace rm_fire_control
 class FireController : public rclcpp::Node
 {
 public:
-    FireController(const rclcpp::NodeOptions & options);
-    void Trajectory_Solution(void);	
-    void ParamInit(void);
-    void ParamUpdate(void);
-    void Choose_board(  
+    FireController(const rclcpp::NodeOptions & options) /* 构造火控节点 */ ;
+    void Trajectory_Solution(void) /* 执行简化弹道解算 */ ;
+    void ParamInit(void) /* 声明并初始化参数 */ ;
+    void ParamUpdate(void) /* 刷新参数 */ ;
+    void Choose_board(
       const auto_aim_interfaces::msg::Target::ConstSharedPtr msg,
-      const auto_aim_interfaces::msg::TimeInfo::ConstSharedPtr time_info);
-
+      const auto_aim_interfaces::msg::TimeInfo::ConstSharedPtr time_info) /* 处理目标消息并生成稳定瞄准角 */ ;
 
 private:
+    float aim_point_x = 0.0f;
+    float aim_point_y = 0.0f;
+    float aim_point_z = 0.0f;
+    float aim_point_yaw = 0.0f;
 
-    float aim_point_x;
-    float aim_point_y;
-    float aim_point_z;
-    float aim_point_yaw;
-    
-    double time_delay;
-    double Fly_time;
+    double time_delay = 0.0;
+    double Fly_time = 0.0;
 
-    //最终输出
-    double aim_pitch;
-    double aim_yaw;
-    bool auto_fire_flag;  //自动开火标志位
-    double pre_aim_pitch=0.0;//middle
-    double pre_aim_yaw=0.0;
-    double current_yaw;
-    bool initialized =false;
-   
+    double aim_pitch = 0.0 /* 稳定 pitch */ ;
+    double aim_yaw = 0.0 /* 稳定 yaw */ ;
+    bool auto_fire_flag = false;
+    double pre_aim_pitch = 0.0;
+    double pre_aim_yaw = 0.0;
+    double current_yaw = 0.0;
+    bool initialized = false;
+    int stable_armor_index_ = -1;
+    int pending_armor_index_ = -1;
+    int pending_armor_count_ = 0;
+    bool has_last_target_stamp_ = false;
+    rclcpp::Time last_target_stamp_{0, 0, RCL_ROS_TIME};
 
-    //参数
-    double Gravity;
-    double Z_Shifting;
-    double Shoot_Speed;
-    double Communicate_delay;
-    bool Ignore_R_Diff;
-    bool Ignore_Z_Diff;
-    double Large_Armor_Width;
-    double Small_Armor_Width;
-    double Yaw_Res_Speed;
-    double alpha;
+    double Gravity = 9.78 /* 重力加速度 */ ;
+    double Z_Shifting = 0.05 /* z 方向补偿 */ ;
+    double Shoot_Speed = 25.0 /* 弹速 */ ;
+    double Communicate_delay = 0.008 /* 通信延时 */ ;
+    bool Ignore_R_Diff = true;
+    bool Ignore_Z_Diff = true;
+    double Large_Armor_Width = 0.23;
+    double Small_Armor_Width = 0.14;
+    double Yaw_Res_Speed = 3.14;
+    double Yaw_Switch_Hysteresis = 0.08 /* 切板滞回阈值 */ ;
+    double Yaw_Max_Change_Speed = 6.0 /* yaw 最大变化率 */ ;
+    double Pitch_Max_Change_Speed = 3.0 /* pitch 最大变化率 */ ;
+    int Switch_Confirm_Frames = 2 /* 切板确认帧数 */ ;
 
-
-    //subscriber    
     message_filters::Subscriber<auto_aim_interfaces::msg::Target> aim_sub_;
     message_filters::Subscriber<auto_aim_interfaces::msg::TimeInfo> aim_time_info_sub_;
-  
+
     typedef message_filters::sync_policies::ApproximateTime<
       auto_aim_interfaces::msg::Target, auto_aim_interfaces::msg::TimeInfo>
       aim_syncpolicy;
     typedef message_filters::Synchronizer<aim_syncpolicy> AimSync;
     std::shared_ptr<AimSync> aim_sync_;
-  
+
     message_filters::Subscriber<buff_interfaces::msg::Rune> rune_sub_;
     message_filters::Subscriber<buff_interfaces::msg::TimeInfo> buff_time_info_sub_;
-  
+
     typedef message_filters::sync_policies::ApproximateTime<
       buff_interfaces::msg::Rune, buff_interfaces::msg::TimeInfo>
       buff_syncpolicy;
@@ -88,22 +88,134 @@ private:
     std::shared_ptr<BuffSync> buff_sync_;
 
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr current_yaw_sub_;
-    void Current_yaw_callback(const std_msgs::msg::Float32::SharedPtr msg);
 
-    //publisher
+    void Current_yaw_callback(const std_msgs::msg::Float32::SharedPtr msg) /* 接收当前 yaw */ ;
+    double NormalizeAngle(double angle) const /* 归一化到 [-pi, pi] */ ;
+    double ShortestAngularDistance(double from, double to) const /* 计算最短角差 */ ;
+    double EstimateFlyTime(double x, double y, double z) const /* 估算飞行时间 */ ;
+    void ApplyAngleStability(
+      double raw_pitch,
+      double raw_yaw,
+      double dt,
+      double & stable_pitch,
+      double & stable_yaw) /* 对输出角做连续化和变化率限制 */ ;
+
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
     rclcpp::Publisher<auto_aim_interfaces::msg::FiredInfo>::SharedPtr fired_info_pub_;
-    
-    // For debug usage
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr latency_pub_;
-
-    // Aimimg point receiving from serial port for visualization
     visualization_msgs::msg::Marker aiming_point_;
 };
 
-
-
-}   // namespace rm_fire_control
-
+}  // namespace rm_fire_control
 
 #endif
+
+// #ifndef __FIRE_CONTROL_HPP__
+// #define __FIRE_CONTROL_HPP__
+
+// #include <iostream>
+// #include <rclcpp/rclcpp.hpp>
+// #include <rclcpp/publisher.hpp>
+// #include <rclcpp/subscription.hpp>
+// #include <message_filters/subscriber.h>
+// #include <message_filters/sync_policies/approximate_time.h>
+
+
+// #include "auto_aim_interfaces/msg/target.hpp"
+// #include "auto_aim_interfaces/msg/time_info.hpp"
+// #include "auto_aim_interfaces/msg/fired_info.hpp"
+// #include "buff_interfaces/msg/rune.hpp"
+// #include "buff_interfaces/msg/time_info.hpp"
+// #include <visualization_msgs/msg/marker.hpp>
+// #include <std_msgs/msg/float32.hpp>
+// #include <std_msgs/msg/float64.hpp>
+
+
+
+// namespace rm_fire_control
+// {
+
+// class FireController : public rclcpp::Node
+// {
+// public:
+//     FireController(const rclcpp::NodeOptions & options);
+//     void Trajectory_Solution(void);	
+//     void ParamInit(void);
+//     void ParamUpdate(void);
+//     void Choose_board(  
+//       const auto_aim_interfaces::msg::Target::ConstSharedPtr msg,
+//       const auto_aim_interfaces::msg::TimeInfo::ConstSharedPtr time_info);
+
+
+// private:
+
+//     float aim_point_x;
+//     float aim_point_y;
+//     float aim_point_z;
+//     float aim_point_yaw;
+    
+//     double time_delay;
+//     double Fly_time;
+
+//     //最终输出
+//     double aim_pitch;
+//     double aim_yaw;
+//     bool auto_fire_flag;  //自动开火标志位
+//     double pre_aim_pitch=0.0;//middle
+//     double pre_aim_yaw=0.0;
+//     double current_yaw;
+//     bool initialized =false;
+   
+
+//     //参数
+//     double Gravity;
+//     double Z_Shifting;
+//     double Shoot_Speed;
+//     double Communicate_delay;
+//     bool Ignore_R_Diff;
+//     bool Ignore_Z_Diff;
+//     double Large_Armor_Width;
+//     double Small_Armor_Width;
+//     double Yaw_Res_Speed;
+//     double alpha;
+
+
+//     //subscriber    
+//     message_filters::Subscriber<auto_aim_interfaces::msg::Target> aim_sub_;
+//     message_filters::Subscriber<auto_aim_interfaces::msg::TimeInfo> aim_time_info_sub_;
+  
+//     typedef message_filters::sync_policies::ApproximateTime<
+//       auto_aim_interfaces::msg::Target, auto_aim_interfaces::msg::TimeInfo>
+//       aim_syncpolicy;
+//     typedef message_filters::Synchronizer<aim_syncpolicy> AimSync;
+//     std::shared_ptr<AimSync> aim_sync_;
+  
+//     message_filters::Subscriber<buff_interfaces::msg::Rune> rune_sub_;
+//     message_filters::Subscriber<buff_interfaces::msg::TimeInfo> buff_time_info_sub_;
+  
+//     typedef message_filters::sync_policies::ApproximateTime<
+//       buff_interfaces::msg::Rune, buff_interfaces::msg::TimeInfo>
+//       buff_syncpolicy;
+//     typedef message_filters::Synchronizer<buff_syncpolicy> BuffSync;
+//     std::shared_ptr<BuffSync> buff_sync_;
+
+//     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr current_yaw_sub_;
+//     void Current_yaw_callback(const std_msgs::msg::Float32::SharedPtr msg);
+
+//     //publisher
+//     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
+//     rclcpp::Publisher<auto_aim_interfaces::msg::FiredInfo>::SharedPtr fired_info_pub_;
+    
+//     // For debug usage
+//     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr latency_pub_;
+
+//     // Aimimg point receiving from serial port for visualization
+//     visualization_msgs::msg::Marker aiming_point_;
+// };
+
+
+
+// }   // namespace rm_fire_control
+
+
+// #endif
