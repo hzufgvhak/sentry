@@ -1,4 +1,4 @@
-import os
+﻿import os
 import launch
 import launch_ros
 from ament_index_python.packages import get_package_share_directory
@@ -6,21 +6,18 @@ from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 
-
 def generate_launch_description():
-    # 获取与拼接默认路径
     sentry_navigation_dir = get_package_share_directory('sentry_navigation')
     slam_pkg_share = get_package_share_directory('sentry_slam')
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     rviz_config_dir = os.path.join(nav2_bringup_dir, 'rviz', 'nav2_default_view.rviz')
 
-    # 创建 Launch 配置
+    # 鍒涘缓 Launch 閰嶇疆
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     map_yaml_path = LaunchConfiguration('map', default=os.path.join(slam_pkg_share, 'maps', 'rmul_2026.yaml'))
     #map_yaml_path = LaunchConfiguration('map', default=os.path.join(slam_pkg_share, 'maps', 'KONG.yaml'))
     nav2_param_path = LaunchConfiguration('params_file', default=os.path.join(sentry_navigation_dir, 'config', 'nav2_params.yaml'))
 
-    # 创建导航启动描述
     navigation_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py')),
         launch_arguments={
@@ -30,23 +27,23 @@ def generate_launch_description():
         }.items(),
     )
 
-    # 创建 SLAM 启动描述
+   
     # slam_launch = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource(
     #         os.path.join(slam_pkg_share, 'launch', 'cartographer.launch.py')
     #     )
     # )
 
-     # 创建静态变换节点
+   
     static_transform_node = launch_ros.actions.Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        name='map_to_odom',
-        arguments=['0.0', '0', '0', '0', '0', '0', 'map', 'odom']  # XYZ RPY (yaw=90°)
+        name='odom_to_base_link',
+        arguments=['0.0', '0', '0', '0', '0', '0', 'odom', 'base_link']
     )
     
 
-    # 启动 LiDAR、IMU、Fast LiO 和 Octomap Server 进程
+   
     launch_livox = launch.actions.ExecuteProcess(
         cmd=['ros2', 'launch', 'livox_ros_driver2', 'msg_MID360_launch.py'],
         output='screen'
@@ -63,7 +60,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # rot_imu：cmd_chassis 包中独立节点，用于 IMU 旋转/补偿
+    # rot_imu
     rot_imu_node = launch_ros.actions.Node(
         package='cmd_chassis',
         executable='rot_imu',
@@ -72,7 +69,7 @@ def generate_launch_description():
     )
 
     launch_fast_lio2 = launch.actions.ExecuteProcess(
-        cmd=['ros2', 'launch', 'fast_lio', 'mapping.launch.py','rviz:=true'],#修改了rviz
+        cmd=['ros2', 'launch', 'fast_lio', 'mapping.launch.py','rviz:=true'],#淇敼浜唕viz
         output='screen'
     )
 
@@ -92,14 +89,13 @@ def generate_launch_description():
         executable='judge',
         name='judge',
         output='log',
-        # 如果需要参数可以在这里添加
+      
         #parameters=[{'use_sim_time': use_sim_time}]
     )
-    # 创建一个动作组，用于按顺序启动节点和进程
     action_group = launch.actions.GroupAction([
         launch.actions.TimerAction(period=1.0, actions=[launch_livox]),
         launch.actions.TimerAction(period=2.0, actions=[launch_dm_imu]),
-        # rot_imu 需要在 dm_imu 启动后立即启动，保证 imu 预处理可用
+        # rot_imu     
         launch.actions.TimerAction(period=3.0, actions=[rot_imu_node]),
         launch.actions.TimerAction(period=4.0, actions=[launch_fast_lio2]),
         launch.actions.TimerAction(period=5.0, actions=[launch_octomap_server2]),
@@ -110,7 +106,7 @@ def generate_launch_description():
         #launch.actions.TimerAction(period=18.0, actions=[launch_judge]),
     ])
 
-    # 创建 RViz 节点
+  
     rviz_node = launch_ros.actions.Node(
       package='rviz2',
       executable='rviz2',
@@ -120,14 +116,14 @@ def generate_launch_description():
       output='log'
      )
 
-    # 声明 Launch 参数
+   
     declared_arguments = [
         DeclareLaunchArgument('use_sim_time', default_value=use_sim_time, description='Use simulation (Gazebo) clock if true'),
         DeclareLaunchArgument('map', default_value=map_yaml_path, description='Full path to map file to load'),
         DeclareLaunchArgument('params_file', default_value=nav2_param_path, description='Full path to param file to load'),
     ]
 
-    # 返回 LaunchDescription
+    #  LaunchDescription
     return launch.LaunchDescription([
         *declared_arguments,
         static_transform_node,
